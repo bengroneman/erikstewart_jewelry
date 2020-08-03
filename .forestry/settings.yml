@@ -9,6 +9,8 @@ sections:
   label: Jewelry
   create: documents
   match: "**/*.md"
+  templates:
+  - jewelry
 - type: directory
   path: journal
   label: Journal
