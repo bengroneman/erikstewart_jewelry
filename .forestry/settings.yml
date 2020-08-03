@@ -4,6 +4,13 @@ auto_deploy: false
 admin_path: "/static/admin"
 webhook_url: 
 sections:
+- type: directory
+  path: testimonials
+  label: Testimonials
+  create: documents
+  match: "**/*"
+  templates:
+  - testimonials
 - type: heading
   label: Content
 - type: directory
@@ -25,6 +32,8 @@ sections:
   match: "**/*.md"
   templates:
   - jewelry
+- type: heading
+  label: Resources
 - type: document
   path: data/theme.json
   label: Theme config
