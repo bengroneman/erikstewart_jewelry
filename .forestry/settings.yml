@@ -7,13 +7,6 @@ sections:
 - type: heading
   label: Content
 - type: directory
-  path: blog
-  label: Blog
-  create: all
-  match: "**/*.md"
-  templates:
-  - journal
-- type: directory
   path: sub_pages
   label: Pages
   create: all
@@ -37,6 +30,13 @@ sections:
   match: "**/*"
   templates:
   - testimonials
+- type: directory
+  path: blog
+  label: Blog
+  create: all
+  match: "**/*.md"
+  templates:
+  - journal
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
