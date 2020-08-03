@@ -4,13 +4,6 @@ auto_deploy: false
 admin_path: "/static/admin"
 webhook_url: 
 sections:
-- type: directory
-  path: testimonials
-  label: Testimonials
-  create: documents
-  match: "**/*"
-  templates:
-  - testimonials
 - type: heading
   label: Content
 - type: directory
@@ -37,6 +30,13 @@ sections:
 - type: document
   path: data/theme.json
   label: Theme config
+- type: directory
+  path: testimonials
+  label: Testimonials
+  create: documents
+  match: "**/*"
+  templates:
+  - testimonials
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
