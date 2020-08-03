@@ -1,9 +1,0 @@
----
-label: Pages
-hide_body: false
-fields:
-- name: about_page
-  type: include
-  config: {}
-  template: project
-  label: About Page
