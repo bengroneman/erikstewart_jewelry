@@ -12,16 +12,3 @@ fields:
   config:
     required: false
   label: Name
-- name: featured_jewelry
-  type: field_group_list
-  fields:
-  - name: jewelry
-    type: include
-    config: {}
-    template: jewelry
-    label: Jewelry
-  config:
-    min: 
-    max: 
-    labelField: 
-  label: Featured Jewelry
