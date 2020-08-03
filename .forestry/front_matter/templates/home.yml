@@ -10,7 +10,8 @@ fields:
 - name: featured_jewelery
   type: blocks
   label: Featured Jewelery
-  template_types: []
+  template_types:
+  - jewelry
   config:
     min: 
     max: 
