@@ -13,7 +13,7 @@ sections:
   match: "**/*"
 - type: directory
   path: jewelry
-  label: Jewelry
+  label: Shop
   create: documents
   match: "**/*.md"
   templates:
