@@ -35,3 +35,5 @@ fields:
     - Erik Stewart
   label: Author
   default: Nichlas W. Andersen
+pages:
+- blog/erik-stewart-jewelry.md
