@@ -4,7 +4,7 @@
       <Hero />
       <JewelryGrid :projects="$page.jewelry.edges" />
     </div>
-    <LatestJournals :journals="$page.journals.edges" />
+    <LatestJournals :journals="$page.posts.edges" />
   </Layout>
 </template>
 
@@ -20,7 +20,7 @@ query Posts {
       }
     }
   },
-  journals: allJournalPost (perPage: 4) {
+  posts: allBlogPost (perPage: 4) {
     edges {
       node {
         id

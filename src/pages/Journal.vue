@@ -26,7 +26,7 @@
 
 <page-query>
 query Journal {
-	posts: allJournalPost {
+	posts: allBlogPost {
     edges {
       node {
         id
