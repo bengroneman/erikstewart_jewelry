@@ -2,11 +2,11 @@
 // Learn more: https://gridsome.org/docs/config
 
 module.exports = {
-  siteName: "Portfolio",
-  siteUrl: `https://www.itsnwa.com`,
+  siteName: "Erik Stewart Jewelry",
+  siteUrl: `erikstewartjewelry.com`,
   host: "0.0.0.0",
-  titleTemplate: "%s - NWA",
-  siteDescription: "Creative technologist",
+  titleTemplate: "%s - Art for the Body",
+  siteDescription: "Expertly crafted custom jewelry for the body",
   plugins: [
     {
       use: "@gridsome/source-filesystem",
