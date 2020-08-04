@@ -16,6 +16,8 @@ sections:
   label: Jewelry
   create: documents
   match: "**/*"
+  templates:
+  - jewelry
 - type: heading
   label: Resources
 - type: document
