@@ -2,7 +2,7 @@
   <Layout>
     <div class="container">
       <Hero />
-      <ProjectsGrid :projects="$page.projects.edges" />
+      <JewelryGrid :projects="$page.jewelry.edges" />
     </div>
     <LatestJournals :journals="$page.journals.edges" />
   </Layout>
@@ -10,15 +10,13 @@
 
 <page-query>
 query Posts {
-	projects: allProjectPost {
+	jewelry: allJewelryItem(filter: { featured: { eq: true }}) {
     edges {
       node {
         id
-        date (format: "YYYY")
-        title
-        categories
-        thumbnail (quality: 90)
-        path
+        name
+        image
+        featured
       }
     }
   },
@@ -32,17 +30,18 @@ query Posts {
     }
   }
 }
+
 </page-query>
 
 <script>
 import Hero from "@/components/Hero"
-import ProjectsGrid from "@/components/ProjectsGrid"
+import JewelryGrid from "@/components/JewelryGrid"
 import LatestJournals from "@/components/LatestJournals"
 
 export default {
   components: {
     Hero,
-    ProjectsGrid,
+    JewelryGrid,
     LatestJournals
   }
 }

@@ -3,13 +3,12 @@
         <div class="project" v-for="item in projects" :key="item.node.id">
             <g-link :to="item.node.path" class="project-link">
             <g-image
-                :src="item.node.thumbnail"
-                :alt="item.node.title"
+                :src="item.node.image.src"
+                :alt="item.node.name"
                 class="thumbnail"
             />
-            <h3 class="project-title">{{ item.node.title }}</h3>
+            <h3 class="project-title">{{ item.node.name }}</h3>
             <div class="categories">
-                <span class="category" v-for="(item, index) in item.node.categories" :key="index">{{ item }}</span>
             </div>
             </g-link>
         </div>
@@ -41,7 +40,7 @@ export default {
   text-decoration: none;
 }
 .thumbnail {
-  height: 560px;
+  height: 10rem;
   object-fit: cover;
   transition: all 0.15s ease;
   box-shadow: 0 0 40px -20px rgba(0,0,0,0.25);
