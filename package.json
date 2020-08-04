@@ -1,10 +1,11 @@
 {
-  "name": "itsnwa.com",
-  "private": true,
+  "name": "erikstewart_jewelry",
+  "private": false,
   "scripts": {
     "build": "gridsome build",
     "develop": "gridsome develop",
-    "explore": "gridsome explore"
+    "explore": "gridsome explore",
+    "build:css": "npx tailwindcss build ./src/assets/tailwind.css -o ./static/assets/main-build.css"
   },
   "dependencies": {
     "@gridsome/remark-prismjs": "0.3.0",
@@ -12,5 +13,8 @@
     "@gridsome/transformer-remark": "^0.5.0",
     "gridsome": "^0.7.13",
     "tailwindcss": "^1.6.2"
+  },
+  "devDependencies": {
+    "gridsome-plugin-tailwindcss": "^3.0.1"
   }
 }
