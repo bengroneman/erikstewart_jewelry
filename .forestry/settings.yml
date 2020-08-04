@@ -11,6 +11,13 @@ sections:
   label: Pages
   create: all
   match: "**/*"
+- type: directory
+  path: jewelry
+  label: Jewelry
+  create: documents
+  match: "**/*"
+  templates:
+  - jewelry
 - type: heading
   label: Resources
 - type: document
