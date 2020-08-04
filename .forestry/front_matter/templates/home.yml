@@ -7,13 +7,18 @@ fields:
   config:
     maxSize: 64
   label: Hero Image
-- name: featured_jewelery
-  type: blocks
-  label: Featured Jewelery
-  template_types:
-  - jewelry
+- name: featured_jewelry
+  type: field_group_list
+  fields:
+  - name: jewelry
+    type: include
+    config: {}
+    template: jewelry
+    label: Jewelry
   config:
     min: 
     max: 
+    labelField: 
+  label: Featured Jewelry
 pages:
 - sub_pages/Home.md
