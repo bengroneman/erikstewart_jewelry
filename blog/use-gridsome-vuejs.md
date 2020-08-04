@@ -1,7 +1,7 @@
 ---
 date: 2020-03-03
 title: Erik Stewart Jewelry First Post
-author: Nichlas W. Andersen
+author: Erik Stewart
 excerpt: At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
   praesentium voluptatum deleniti atque corrupti quos dolores et quas.
 
