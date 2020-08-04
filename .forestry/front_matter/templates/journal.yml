@@ -31,6 +31,7 @@ fields:
       section: authors
       file: data/authors/nichlas-w-andersen.json
     required: true
-    options: []
+    options:
+    - Erik Stewart
   label: Author
   default: Nichlas W. Andersen
