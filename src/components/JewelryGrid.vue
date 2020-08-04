@@ -5,7 +5,7 @@
             <g-image
                 :src="item.node.image.src"
                 :alt="item.node.name"
-                class="thumbnail"
+                class="thumbnail m-auto"
             />
             <h3 class="project-title">{{ item.node.name }}</h3>
             <div class="categories">
