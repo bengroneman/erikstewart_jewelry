@@ -1,7 +1,7 @@
 <template>
-  <div class="flex">
-    <div class="project" v-for="item in jewelry" :key="item.node.id">
-      <g-link :to="item.node.path" class="project-link">
+  <div class="grid grid-cols-3 gap-4">
+    <div class="col-span-1" v-for="item in jewelry" :key="item.node.id">
+      <g-link :to="item.node.path">
         <g-image
           :src="item.node.image.src"
           :alt="item.node.name"
@@ -18,7 +18,7 @@ export default {
   // TODO: Format price
   props: {
     jewelry: {
-      type: [],
+      type: Array,
       required: true
     }
   }

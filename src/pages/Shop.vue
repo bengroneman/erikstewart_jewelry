@@ -1,10 +1,14 @@
 <template>
   <Layout>
-    <section class="w-1/2 flex justify-center">
-      <img 
-        :src="$page.shop_page.edges[0].node.hero_image.src"
-        :alt="$page.shop_page.edges[0].node.name"
-      >
+    <img
+      :src="$page.shop_page.edges[0].node.hero.src"
+      :height="$page.shop_page.edges[0].node.hero.size.height"
+      :width="$page.shop_page.edges[0].node.hero.size.width"
+    /> 
+    <section class="w-1/2 p-12 flex justify-center">
+      <h1 class="text-3xl text-center m-4">
+        SHOP
+      </h1>
       <ShopGrid :jewelry="$page.jewelry.edges"></ShopGrid>
     </section>
   </Layout>
@@ -22,11 +26,12 @@ query Page {
       }
     }
   },
-  shop_page: allSubPages(filter: {path: {eq: "/sub-pages/shop"}}) {
+  shop_page: allSubPages(filter: {path: {regex: "shop"}}) {
     edges {
       node {
         id
-        hero_image
+        path
+        hero
       }
     }
   }
