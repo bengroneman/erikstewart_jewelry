@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <Hero />
-    <JewelryGrid :projects="$page.jewelry.edges" />
+    <JewelryGrid :jewelry="$page.jewelry.edges" />
     <LatestJournals :journals="$page.posts.edges" />
   </Layout>
 </template>
