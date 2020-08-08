@@ -1,9 +1,7 @@
 <template>
   <Layout>
-    <div class="container">
-      <Hero />
-      <JewelryGrid :projects="$page.jewelry.edges" />
-    </div>
+    <Hero />
+    <JewelryGrid :projects="$page.jewelry.edges" />
     <LatestJournals :journals="$page.posts.edges" />
   </Layout>
 </template>
