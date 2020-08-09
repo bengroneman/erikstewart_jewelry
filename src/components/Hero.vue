@@ -3,20 +3,25 @@
       <div class="m-24">
         <h1 class="text-6xl" v-html="settings.hero_title" />
         <h2 class="text-xl w-1/3" v-html="settings.hero_subtitle" />
-        <g-link to="/shop" class="text-uppercase bg-black text-white p-2 mt-2 rounded flex inline">
+        <MagicButton link="/shop">
           View All
-        </g-link>
+        </MagicButton>
         <img src="/uploads/DSC_3030a.jpg" alt="replace this with query data"/>
       </div>
     </div>
 </template>
 
 <script>
+import MagicButton from '@/components/MagicButton'
+
 export default {
   data() {
     return {
       settings: require("../../data/theme.json")
     }
+  },
+  components: {
+    MagicButton
   }
 }
 </script>
