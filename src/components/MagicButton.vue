@@ -1,6 +1,6 @@
 <template>
   <button>
-    <g-link :to="link" class="text-uppercase bg-black text-white p-2 mt-2 rounded flex inline">
+    <g-link :to="link" class="text-uppercase bg-blue-gray-e text-white p-2 mt-2 flex pl-6 pr-6 text-light-e">
       <slot></slot>
     </g-link>
   </button>

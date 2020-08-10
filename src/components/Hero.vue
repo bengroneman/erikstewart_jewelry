@@ -1,12 +1,14 @@
 <template>
     <div class="w-full">
       <div class="m-24">
-        <h1 class="text-6xl" v-html="settings.hero_title" />
-        <h2 class="text-xl w-1/3" v-html="settings.hero_subtitle" />
+        <span class="drop-shadow">
+          <h1 class="text-7xl" v-html="settings.hero_title" />
+        </span>
+        <h2 class="text-5xl" v-html="settings.hero_subtitle" />
+        <p class="text-lg w-1/3" v-html="settings.hero_body"></p>
         <MagicButton link="/shop">
           View All
         </MagicButton>
-        <img src="/uploads/DSC_3030a.jpg" alt="replace this with query data"/>
       </div>
     </div>
 </template>
