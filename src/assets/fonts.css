@@ -16,3 +16,18 @@ h2 {
 .text-7xl {
   font-size: 7rem;
 }
+
+.bg-blue-gray-e {
+  background-color: #8B91A0;
+}
+
+.text-light-e {
+  color: #F6F8F8;
+}
+
+.drop-shadow {
+  background-color: #E3E3E3;
+  width: fit-content;
+  height: 5rem;
+  display: inline-block;
+}
