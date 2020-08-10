@@ -1,0 +1,18 @@
+@font-face {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  src: url('./fonts/GEORGIA.TTF');
+}
+
+h1 {
+  font-family: Georgia;
+  color: #464646;
+}
+
+h2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #676665;
+}
+
+.text-7xl {
+  font-size: 7rem;
+}

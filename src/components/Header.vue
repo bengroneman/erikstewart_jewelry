@@ -1,5 +1,5 @@
 <template>
-    <header class="header bg-gray-400" :class="{sticky: $route.path === '/' || $route.path.includes('/projects/')}">
+    <header class="header bg-gray-theme z-50" :class="{sticky: $route.path === '/' || $route.path.includes('/projects/')}">
         <div class="container">
             <div class="left">
                 <g-link :to="{ name: 'home' }" class="home-link">
@@ -81,5 +81,8 @@ export default {
 }
 .nav > .active {
     border-color: inherit;
+}
+.bg-gray-theme {
+    background: #F5F7F7;
 }
 </style>
