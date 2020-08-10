@@ -11,7 +11,9 @@
             </div>
             <div class="bg-gray-200 mb-12">
                 <div class="p-4">
-                <h1 class="text-6xl">{{ item.node.name }}</h1>
+                <span class="drop-shadow">
+                    <h1 class="text-6xl">{{ item.node.name }}</h1>
+                </span>
                 <p class="text-l">{{item.node.content}}</p>
                 <MagicButton link="/shop">View</MagicButton>
                 </div>
@@ -32,6 +34,12 @@ export default {
     },
     components: {
         MagicButton
+    },
+    methods: {
+        isEven(num) {
+            if (num <= 0 ) { return false }
+            return num % 2 == 0
+        }
     }
 }
 </script>
