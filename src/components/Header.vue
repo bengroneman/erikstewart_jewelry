@@ -1,5 +1,5 @@
 <template>
-    <header class="header bg-gray-theme z-50" :class="{sticky: $route.path === '/' || $route.path.includes('/projects/')}">
+    <header class="header bg-gray-e z-50" :class="{sticky: $route.path === '/' || $route.path.includes('/projects/')}">
         <div class="container">
             <div class="left">
                 <g-link :to="{ name: 'home' }" class="home-link">

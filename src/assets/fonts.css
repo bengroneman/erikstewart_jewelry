@@ -1,28 +1,15 @@
 @font-face {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  src: url('./fonts/GEORGIA.TTF');
+  font-family: PlayfairDisplay, serif;
+  src: url('./fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf')
 }
 
-h1 {
-  font-family: Georgia;
-  color: #464646;
+@font-face {
+  font-family: OpenSans, serif;
+  src: url('./fonts/Open_Sans/OpenSans-Regular.ttf');
 }
 
-h2 {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  color: #676665;
-}
-
-.text-7xl {
-  font-size: 7rem;
-}
-
-.bg-blue-gray-e {
-  background-color: #8B91A0;
-}
-
-.text-light-e {
-  color: #F6F8F8;
+.text-10xl {
+  font-size: 10rem;
 }
 
 .drop-shadow {
