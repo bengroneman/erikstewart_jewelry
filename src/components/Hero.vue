@@ -17,6 +17,13 @@
             </MagicButton>
           </div>
         </div>
+      <div class="m-24">
+        <h1 class="text-10xl font-display tracking-wide" v-html="settings.hero_title" />
+        <h2 class="text-5xl font-display" v-html="settings.hero_subtitle" />
+        <p class="text-lg w-1/3 font-body mb-2" v-html="settings.hero_body"></p>
+        <MagicButton link="/shop">
+          View All
+        </MagicButton>
       </div>
     </div>
 </template>

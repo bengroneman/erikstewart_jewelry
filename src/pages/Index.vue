@@ -6,7 +6,7 @@
 </template>
 
 <page-query>
-query Posts {
+query Home {
 	jewelry: allJewelryItem(filter: { featured: { eq: true }}) {
     edges {
       node {
@@ -33,6 +33,13 @@ query Posts {
     	content
     	header
     	sub_header
+  }
+  home_page: subPages(path: "/sub-pages/home/") {
+    id
+    header
+    sub_header
+    hero_image
+    content
   }
 }
 </page-query>

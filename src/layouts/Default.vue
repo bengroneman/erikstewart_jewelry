@@ -53,10 +53,6 @@ h1 {
   padding: 0;
 }
 
-.layout.sticky-header {
-  padding: 6rem 0 0 0;
-}
-
 .container {
   margin: 0 auto;
   padding: 0 2rem;

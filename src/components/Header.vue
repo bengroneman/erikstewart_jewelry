@@ -36,7 +36,6 @@ export default {
   }
 }
 </script>
-
 <style scoped>
 .header {
     position: relative;
@@ -89,3 +88,4 @@ export default {
     background: #F5F7F7;
 }
 </style>
+<!-- TODO: dry this code up a bit with tailwind @apply directive -->
