@@ -7,7 +7,7 @@ featured_jewelry:
 about_section: |-
   ## About
 
-  ##### Erik stewart Contemporary jewelry with an expression of art, nature and architecture designed as Art for the Body.
+  ##### Erik Stewart Contemporary jewelry with an expression of art, nature, and architecture designed as Art for the Body.
 
   ##### Erik Stewart Jewelry delivers conceptual form aligned with exquisite detail in design and workmanship.
 
