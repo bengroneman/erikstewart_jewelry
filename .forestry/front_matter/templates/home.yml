@@ -2,6 +2,16 @@
 label: Home
 hide_body: true
 fields:
+- name: header
+  type: text
+  config:
+    required: false
+  label: Header
+- name: sub_header
+  type: text
+  config:
+    required: false
+  label: Sub Header
 - name: hero_image
   type: file
   config:
