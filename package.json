@@ -2,10 +2,10 @@
   "name": "erikstewart_jewelry",
   "private": false,
   "scripts": {
+    "build:css": "npx tailwindcss build ./src/assets/tailwind.css -o ./src/assets/main-build.css",
     "build": "gridsome build",
     "develop": "gridsome develop",
-    "explore": "gridsome explore",
-    "build:css": "npx tailwindcss build ./src/assets/tailwind.css -o ./src/assets/main-build.css"
+    "explore": "gridsome explore"
   },
   "dependencies": {
     "@gridsome/remark-prismjs": "0.3.0",
