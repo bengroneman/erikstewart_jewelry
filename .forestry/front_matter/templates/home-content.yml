@@ -1,0 +1,22 @@
+---
+label: Home Content
+hide_body: true
+fields:
+- type: boolean
+  name: dark_mode
+  label: dark_mode
+- type: text
+  name: site_name
+  label: site_name
+- type: text
+  name: site_description
+  label: site_description
+- type: text
+  name: hero_title
+  label: hero_title
+- type: text
+  name: hero_subtitle
+  label: hero_subtitle
+- type: textarea
+  name: hero_body
+  label: hero_body
