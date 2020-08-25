@@ -13,7 +13,7 @@ sections:
   path: sub_pages
   label: Pages
   create: all
-  match: "**/*"
+  match: "**/*.md"
 - type: directory
   path: jewelry
   label: Jewelry
