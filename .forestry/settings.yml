@@ -7,14 +7,13 @@ sections:
 - type: document
   path: data/home_content.json
   label: Home Content
-  match: "**/*"
 - type: heading
   label: Content
 - type: directory
   path: sub_pages
   label: Pages
   create: all
-  match: "**/*"
+  match: "**/*.md"
 - type: directory
   path: jewelry
   label: Jewelry
