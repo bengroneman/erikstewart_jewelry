@@ -5,7 +5,8 @@
     "build": "gridsome build",
     "develop": "gridsome develop",
     "explore": "gridsome explore",
-    "build:css": "npx tailwindcss build ./src/assets/tailwind.css -o ./src/assets/main-build.css"
+    "build:css": "npx tailwindcss build ./src/assets/tailwind.css -o ./src/assets/main-build.css",
+    "build:all": "npm run build && npm run build:css"
   },
   "dependencies": {
     "@gridsome/remark-prismjs": "0.3.0",

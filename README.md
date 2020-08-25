@@ -1,4 +1,13 @@
-<p align="center">
-  <img src="https://file-xidfrcjkaq.now.sh/" height="240">
-  <h3 align="center">Blue Dojo Dev</h3>
-</p>
+# Blue Dojo Dev - 2020 Portfolio rework
+## How to get up and running
+**For development**
+```
+npm install
+npm run build:css
+gridsome develop
+```
+**For production**
+```
+npm install
+npm run build:all 
+```
