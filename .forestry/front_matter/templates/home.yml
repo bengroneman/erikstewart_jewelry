@@ -17,14 +17,5 @@ fields:
   config:
     maxSize: 64
   label: Hero Image
-- name: about_section
-  type: textarea
-  default: ''
-  config:
-    required: false
-    wysiwyg: true
-    schema:
-      format: markdown
-  label: About Section
 pages:
 - sub_pages/Home.md
