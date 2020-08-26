@@ -12,5 +12,6 @@ about_section: |-
   ##### Erik Stewart Jewelry delivers conceptual form aligned with exquisite detail in design and workmanship.
 header: Erik Stewart Jewelry
 sub_header: Art For the Body
+body: "<p>Erik Stewart Art for the body</p>"
 
 ---
