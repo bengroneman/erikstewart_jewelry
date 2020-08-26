@@ -1,11 +1,9 @@
 <template>
     <div class="w-full">
       <div class="m-24">
-        <span class="drop-shadow">
-          <h1 class="text-10xl font-display tracking-wide" v-html="settings.hero_title" />
-        </span>
-        <h2 class="text-5xl font-display mt-2" v-html="settings.hero_subtitle" />
-        <p class="text-lg w-1/3 font-body mb-2" v-html="settings.hero_body"></p>
+        <h1 class="text-10xl font-display tracking-wide" v-html="content.header" />
+        <h2 class="text-5xl font-display mt-2" v-html="content.sub_header" />
+        <p class="text-lg w-1/3 font-body mb-2" v-html="content.body"></p>
         <MagicButton link="/shop">
           View All
         </MagicButton>
@@ -20,6 +18,12 @@ export default {
   data() {
     return {
       settings: require("../../data/theme.json")
+    }
+  },
+  props: {
+    content: {
+      type: Object,
+      required: true
     }
   },
   components: {

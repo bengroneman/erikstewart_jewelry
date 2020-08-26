@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <Hero />
+    <Hero :content="$page.home_page" />
     <JewelryGrid :jewelry="$page.jewelry.edges" />
     <LatestJournals :journals="$page.posts.edges" />
   </Layout>
@@ -27,8 +27,13 @@ query Posts {
       }
     }
   }
+  home_page: subPages(path: "/sub-pages/home/") {
+  		hero_image
+    	about_section
+    	header
+    	sub_header
+  }
 }
-
 </page-query>
 
 <script>
