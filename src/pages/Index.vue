@@ -26,10 +26,11 @@ query Posts {
         title
       }
     }
-  }
+  },
   home_page: subPages(path: "/sub-pages/home/") {
+      id
   		hero_image
-    	about_section
+    	body
     	header
     	sub_header
   }

@@ -1,7 +1,12 @@
 <template>
     <div class="w-full">
-        <div class="h-full grid grid-cols-2" v-for="item in jewelry" :key="item.node.id">
-            <div class="p-4">
+        <div
+            class="h-full flex"
+            :class="[isEven(index) ? '': 'flex-row-reverse']"
+            v-for="(item, name, index) in jewelry"
+            :key="item.node.id + name"
+        >
+            <div class="p-4 w-1/2">
                 <g-link :to="item.node.path">
                 <g-image
                     :src="item.node.image.src"
@@ -9,11 +14,9 @@
                 />
                 </g-link>
             </div>
-            <div class="bg-gray-200 mb-12">
+            <div class="bg-gray-200 w-1/2 mb-12">
                 <div class="p-4">
-                <span class="drop-shadow">
-                    <h1 class="text-6xl">{{ item.node.name }}</h1>
-                </span>
+                <h1 class="text-6xl">{{ item.node.name }}</h1>
                 <p class="text-l">{{item.node.content}}</p>
                 <MagicButton link="/shop">View</MagicButton>
                 </div>
