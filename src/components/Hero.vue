@@ -1,6 +1,10 @@
 <template>
     <div class="w-full">
-      <div class="m-24 flex flex-row bg-contain bg-no-repeat bg-right-top" :style="{ backgroundImage: `url(${content.hero_image.src})` }">
+      <div
+        class="m-24 flex flex-row bg-contain bg-no-repeat bg-right-top"
+        :style="{ backgroundImage: `url(${content.hero_image.src})` }"
+        :alt="content.hero_image.alt"
+       >
         <div class="w-2/3"> 
           <div class="headers">
             <h1 class="text-10xl font-display tracking-wide" v-html="content.header" />
