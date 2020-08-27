@@ -2,7 +2,7 @@
   <Layout>
     <Hero :content="$page.home_page" />
     <JewelryGrid :jewelry="$page.jewelry.edges" />
-    <LatestJournals :journals="$page.posts.edges" />
+    <LatestJournals :posts="$page.posts.edges" />
   </Layout>
 </template>
 
