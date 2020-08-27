@@ -1,5 +1,11 @@
 ---
 featured_image: "/uploads/erik-at-the-bench.jpg"
+excerpt: Contemporary sculptural form…Exquisite detail in design and workmanship…Clever
+  use of negative space…Intelligent settings…Erik Stewart Jewelry presents a uniquely
+  personal synthesis of architectural form and sophisticated style transformed into
+  Art for the Body.
+header: About Erik
+sub_header: Art for the Body
 
 ---
 **Contemporary sculptural form…Exquisite detail in design and workmanship…Clever use of negative space…Intelligent settings…Erik Stewart Jewelry** presents a uniquely personal synthesis of architectural form and sophisticated style transformed into **Art for the Body.**

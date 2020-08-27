@@ -18,15 +18,15 @@ fields:
   label: Excerpt
 - name: header
   type: text
-  default: 'About Erik'
+  default: About Erik
   config:
     required: false
   label: Header
 - name: sub_header
   type: text
-  default: 'Art for the Body'
+  default: Art for the Body
   config:
     required: false
-  label: 'Sub Header'
+  label: Sub Header
 pages:
 - sub_pages/About.md
