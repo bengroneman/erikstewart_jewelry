@@ -36,4 +36,5 @@ fields:
   label: Author
   default: Erik Stewart
 pages:
+- blog/erik-stewart-jewelry-test.md
 - blog/erik-stewart-jewelry.md
