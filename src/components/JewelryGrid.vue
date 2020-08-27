@@ -2,9 +2,9 @@
     <div class="w-full">
         <div
             class="h-full flex"
-            :class="[isEven(index) ? '': 'flex-row-reverse']"
-            v-for="(item, name, index) in jewelry"
-            :key="item.node.id + name"
+            :class="[isEven(index + 1) ? '': 'flex-row-reverse']"
+            v-for="(item, index) in jewelry"
+            :key="item.node.id"
         >
             <div class="p-4 w-1/2">
                 <g-link :to="item.node.path">
