@@ -29,11 +29,11 @@ fields:
     source:
       type: simple
       section: authors
-      file: data/authors/nichlas-w-andersen.json
+      file: data/authors/erik-stewart.json
     required: true
     options:
     - Erik Stewart
   label: Author
-  default: Nichlas W. Andersen
+  default: Erik Stewart
 pages:
 - blog/erik-stewart-jewelry.md
