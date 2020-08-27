@@ -1,12 +1,18 @@
 <template>
     <div class="w-full">
-      <div class="m-24">
-        <h1 class="text-10xl font-display tracking-wide" v-html="content.header" />
-        <h2 class="text-5xl font-display mt-2" v-html="content.sub_header" />
-        <p class="text-lg w-1/3 font-body mb-2" v-html="content.body"></p>
-        <MagicButton link="/shop">
-          View All
-        </MagicButton>
+      <div class="m-24 flex flex-row bg-contain bg-no-repeat bg-right-top" :style="{ backgroundImage: `url(${content.hero_image.src})` }">
+        <div class="w-2/3"> 
+          <div class="headers">
+            <h1 class="text-10xl font-display tracking-wide" v-html="content.header" />
+            <h2 class="text-5xl font-display mt-2" v-html="content.sub_header" />
+          </div>
+          <div class="content"> 
+            <p class="text-lg font-body mb-2" v-html="content.body"></p>
+            <MagicButton link="/shop">
+              View All
+            </MagicButton>
+          </div>
+        </div>
       </div>
     </div>
 </template>

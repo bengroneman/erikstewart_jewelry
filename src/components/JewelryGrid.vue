@@ -1,8 +1,8 @@
 <template>
     <div class="w-full">
         <div
-            class="h-full flex"
-            :class="[isEven(index + 1) ? '': 'flex-row-reverse']"
+            class="h-full flex mb-24"
+            :class="[isEven(index + 1) ? 'flex-row-reverse': '']"
             v-for="(item, index) in jewelry"
             :key="item.node.id"
         >
