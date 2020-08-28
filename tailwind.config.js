@@ -16,11 +16,13 @@ module.exports = {
       fontSize: {
         h1: '7.5rem',
         h2: '3rem',
+        h3: '2rem',
         p: '0.875rem'
       },
       letterSpacing: {
         h1: '0.125rem',
         h2: '0.05rem',
+        h3: '0.033rem',
         p: '0.014rem'
       }
     },

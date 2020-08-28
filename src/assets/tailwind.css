@@ -6,4 +6,7 @@
 .heading-2 {
   @apply text-h2 tracking-h2 uppercase text-m-gray-e font-display;
 }
+.heading-3 {
+  @apply text-h3 tracking-h3 text-m-gray-e font-display;
+}
 @tailwind utilities;

@@ -16,8 +16,8 @@
             </div>
             <div class="bg-gray-200 w-1/2 mb-12">
                 <div class="p-4">
-                <h2 class="header-2">{{ item.node.name }}</h2>
-                <p class="text-l">{{item.node.content}}</p>
+                <h3 class="heading-3">{{ item.node.name }}</h3>
+                <p class="text-p">{{item.node.content}}</p>
                 <MagicButton link="/shop">View</MagicButton>
                 </div>
             </div>
