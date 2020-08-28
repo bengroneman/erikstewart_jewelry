@@ -1,7 +1,8 @@
 <template>
   <Layout>
     <section class="w-full" id="about">
-      <h1 class="text-center text-2xl">About Erik Stewart Jewelry</h1>
+      <h1 class="text-center text-2xl">{{ $page.about_page.edges[0].node.header }}</h1>
+      <h2 class="text-center text-2xl">{{ $page.about_page.edges[0].node.sub_header }}</h2>
       <div class="flex m-4">
         <div class="w-1/2 bg-gray-500 h-full">
           <img 
@@ -20,8 +21,7 @@
 </template>
 
 <page-query>
-# Write your query or mutation here
-query {
+query About {
   about_page: allSubPages (filter: {path: {eq: "/sub-pages/about/" }}) {
     edges {
       node {
@@ -29,6 +29,8 @@ query {
         path
         content
         featured_image
+        header
+        sub_header
       }
     }
   }

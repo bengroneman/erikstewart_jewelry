@@ -7,11 +7,11 @@
        >
         <div class="w-2/3"> 
           <div class="headers">
-            <h1 class="text-10xl font-display tracking-wide" v-html="content.header" />
-            <h2 class="text-5xl font-display mt-2" v-html="content.sub_header" />
+            <h1 class="heading-1" v-html="content.header" />
+            <h2 class="heading-2" v-html="content.sub_header" />
           </div>
           <div class="content"> 
-            <p class="text-lg font-body mb-2" v-html="content.body"></p>
+            <p class="text-p font-body mb-2" v-html="content.body"></p>
             <MagicButton link="/shop">
               View All
             </MagicButton>

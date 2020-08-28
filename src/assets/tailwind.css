@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
+.heading-1 {
+  @apply text-h1 leading-tight tracking-h1 text-dark-gray-e font-display;
+}
+.heading-2 {
+  @apply text-h2 tracking-h2 uppercase text-m-gray-e font-display;
+}
 @tailwind utilities;

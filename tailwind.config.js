@@ -12,6 +12,16 @@ module.exports = {
       fontFamily: {
         display: ['PlayfairDisplay', 'serif'],
         body: ['OpenSans', 'sans-serif']
+      },
+      fontSize: {
+        h1: '7.5rem',
+        h2: '3rem',
+        p: '0.875rem'
+      },
+      letterSpacing: {
+        h1: '0.125rem',
+        h2: '0.05rem',
+        p: '0.014rem'
       }
     },
   },
