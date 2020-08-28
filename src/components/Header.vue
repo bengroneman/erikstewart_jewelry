@@ -1,12 +1,12 @@
 <template>
     <header class="header bg-gray-e z-50" :class="{sticky: $route.path === '/' || $route.path.includes('/projects/')}">
-        <div class="container">
-            <div class="left">
+        <div class="ml-24 mr-24 flex items-center h-full justify-between">
+            <div class="">
                 <g-link :to="{ name: 'home' }" class="home-link">
                     <img 
                         src="../../static/logo-black.png"
                         :alt="settings.site_name" 
-                        class="logo"
+                        class="h-16"
                     />
                 </g-link>
             </div>
@@ -51,9 +51,6 @@ export default {
 }
 .home-link {
     text-decoration: none;
-}
-.logo {
-    height: 3rem;
 }
 .site-name {
     font-size: 0.9rem;

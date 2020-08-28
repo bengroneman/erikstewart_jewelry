@@ -1,11 +1,16 @@
 <template>
   <Layout>
 
-    <div class="container">
-      <div class="journal-hero">
-        <h1 class="journal-header">
-          a wise person once said...
+    <div class="flex flex-row">
+      <div
+        class="ml-40"
+      >
+        <h1 class="heading-1">
+          blog
         </h1>
+        <h2 class="heading-2">
+          Erik Stewart Jewelry
+        </h2>
       </div>
     </div>
 
@@ -25,7 +30,7 @@
 </template>
 
 <page-query>
-query Journal {
+query Blog {
 	posts: allBlogPost {
     edges {
       node {
