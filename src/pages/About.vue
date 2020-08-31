@@ -1,19 +1,15 @@
 <template>
   <Layout>
     <section class="w-full" id="about">
-      <h1 class="text-center text-2xl">{{ $page.about_page.edges[0].node.header }}</h1>
-      <h2 class="text-center text-2xl">{{ $page.about_page.edges[0].node.sub_header }}</h2>
-      <div class="flex m-4">
-        <div class="w-1/2 bg-gray-500 h-full">
-          <img 
-            :src="$page.about_page.edges[0].node.featured_image.src"
-            class="h-full"
-          />
-        </div>
-        <div
-          class="w-1/2 p-8 bg-white"
-          v-html="$page.about_page.edges[0].node.content"
-        >
+      <div class="ml-40 mb-24 mt-12">
+        <h1 class="heading-1">{{ $page.about_page.edges[0].node.header }}</h1>
+        <h2 class="heading-2">{{ $page.about_page.edges[0].node.sub_header }}</h2>
+        <div class="flex m-4">
+          <div
+            class="w-2/3 bg-white"
+            v-html="$page.about_page.edges[0].node.content"
+          >
+          </div>
         </div>
       </div>
     </section>
@@ -28,7 +24,6 @@ query About {
         id
         path
         content
-        featured_image
         header
         sub_header
       }
