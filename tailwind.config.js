@@ -10,7 +10,7 @@ module.exports = {
         'light-gray-e': '#F5F7F7'
       },
       fontFamily: {
-        display: ['PlayfairDisplay', 'serif'],
+        display: ['CenturyGothic', 'serif'],
         body: ['OpenSans', 'sans-serif']
       },
       fontSize: {
