@@ -26,15 +26,5 @@ fields:
     schema:
       format: html-blocks
   label: body
-- name: featured_jewelry
-  type: list
-  config:
-    use_select: true
-    min: 
-    max: 
-    source:
-      type: pages
-      section: jewelry
-  label: Featured Jewelry
 pages:
 - sub_pages/Home.md
