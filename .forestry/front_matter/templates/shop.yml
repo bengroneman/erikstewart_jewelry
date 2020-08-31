@@ -2,10 +2,20 @@
 label: Shop
 hide_body: false
 fields:
-- name: hero
+- name: header
+  type: text
+  config:
+    required: false
+  label: header
+- name: sub_header
+  type: text
+  config:
+    required: false
+  label: sub_header
+- name: hero_image
   type: file
   config:
     maxSize: 64
-  label: Hero
+  label: hero_image
 pages:
 - sub_pages/Shop.md
