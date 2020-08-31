@@ -11,7 +11,7 @@
             <h2 class="heading-2" v-html="content.sub_header" />
           </div>
           <div class="content"> 
-            <p class="text-p font-body mb-2" v-html="content.body"></p>
+            <p class="text-p font-body mb-2" v-html="content.content"></p>
             <MagicButton link="/shop">
               View All
             </MagicButton>

@@ -23,6 +23,7 @@ query Page {
     hero_image
     header
     sub_header
+    content
   }
 }
 </page-query>
