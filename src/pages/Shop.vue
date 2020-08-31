@@ -1,16 +1,7 @@
 <template>
   <Layout>
-    <img
-      :src="$page.shop_page.edges[0].node.hero.src"
-      :height="$page.shop_page.edges[0].node.hero.size.height"
-      :width="$page.shop_page.edges[0].node.hero.size.width"
-    /> 
-    <section class="w-1/2 p-12 flex justify-center">
-      <h1 class="text-3xl text-center m-4">
-        SHOP
-      </h1>
+      <Hero :content="$page.shop_page" />
       <ShopGrid :jewelry="$page.jewelry.edges"></ShopGrid>
-    </section>
   </Layout>
 </template>
 
@@ -26,24 +17,24 @@ query Page {
       }
     }
   },
-  shop_page: allSubPages(filter: {path: {regex: "shop"}}) {
-    edges {
-      node {
-        id
-        path
-        hero
-      }
-    }
+  shop_page: subPages(path: "/sub-pages/shop/") {
+    id
+    path
+    hero_image
+    header
+    sub_header
   }
 }
 </page-query>
 
 <script>
 import ShopGrid from '@/components/ShopGrid'
+import Hero from '@/components/Hero'
 
 export default {
   components: {
-    ShopGrid
+    ShopGrid,
+    Hero
   },
 }
 </script>
