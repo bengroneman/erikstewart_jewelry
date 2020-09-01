@@ -5,7 +5,7 @@
         :style="{ backgroundImage: `url(${content.hero_image.src})` }"
         :alt="content.hero_image.alt"
        >
-        <div class="w-2/3"> 
+        <div class="w-1/2"> 
           <div class="headers">
             <h1 class="heading-1" v-html="content.header" />
             <h2 class="heading-2" v-html="content.sub_header" />

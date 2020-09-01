@@ -30,7 +30,7 @@ query Posts {
   home_page: subPages(path: "/sub-pages/home/") {
       id
   		hero_image
-    	body
+    	content
     	header
     	sub_header
   }
