@@ -15,6 +15,7 @@ query Posts {
         name
         image
         featured
+        content
       }
     }
   },

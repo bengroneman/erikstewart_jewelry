@@ -14,11 +14,11 @@
                 />
                 </g-link>
             </div>
-            <div class="bg-gray-200 w-1/2 mb-12">
-                <div class="p-4">
-                <h3 class="heading-3">{{ item.node.name }}</h3>
-                <p class="text-p">{{item.node.content}}</p>
-                <MagicButton link="/shop">View</MagicButton>
+            <div class="bg-gray-200 w-1/2">
+                <div class="w-2/3 mx-auto py-24">
+                    <h3 class="heading-2">{{ item.node.name }}</h3>
+                    <div class="text-p pb-4" v-html="item.node.content"></div>
+                    <MagicButton link="/shop">View</MagicButton>
                 </div>
             </div>
         </div>

@@ -7,8 +7,8 @@
        >
         <div class="w-1/2"> 
           <div class="headers">
-            <h1 class="heading-1" v-html="content.header" />
-            <h2 class="heading-2" v-html="content.sub_header" />
+            <h1 class="heading-1 font-display" v-html="content.header" />
+            <h2 class="heading-2 uppercase font-display" v-html="content.sub_header" />
           </div>
           <div class="content"> 
             <p class="text-p font-body mb-2" v-html="content.content"></p>
