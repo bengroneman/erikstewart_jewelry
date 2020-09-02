@@ -1,10 +1,10 @@
 <template>
   <Layout>
     <div class="journal">
-      <div class="container journal-container">
+      <div class="mx-auto w-2/3">
 
         <div class="journal-header">
-          <h1 v-html="$page.post.title" class="journal-title" />
+          <h1 v-html="$page.post.title" class="heading-1" />
           <div class="journal-meta">
             <div class="journal-author">
               <span class="label">Author</span>
@@ -56,9 +56,6 @@ export default {
 </script>
 
 <style scoped>
-.journal-container {
-  max-width: 840px;
-}
 .journal-header {
   padding: 2rem 0 4rem 0;
 }
