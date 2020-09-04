@@ -2,7 +2,7 @@
     <footer
         class="w-full flex flex-row"
     >
-        <ContactForm class="pl-24 pb-24 w-1/2 bg-black" />
+        <ContactForm class="pl-24 pb-24 w-1/2 px-12 bg-black" />
         <div
             class="w-1/2 bg-cover bg-no-repeat bg-right"
             :style="{ backgroundImage: `url(${$static.contact_page.featured_image.src})`}"

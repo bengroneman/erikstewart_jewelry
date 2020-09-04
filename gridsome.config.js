@@ -56,6 +56,9 @@ module.exports = {
         }
       }
     },
+    {
+      use: 'gridsome-plugin-tailwindcss',
+    },
   ],
   transformers: {
     remark: {
