@@ -5,7 +5,7 @@
         <g-image
           :src="item.node.image.src"
           :alt="item.node.name"
-          class="thumbnail m-auto"
+          class="m-auto max-w-sm"
         />
         <h3 class="heading-3 text-center mt-6">{{ item.node.name }}</h3>
       </g-link>
@@ -14,7 +14,6 @@
 </template>
 <script>
 export default {
-  // TODO: Format price
   props: {
     jewelry: {
       type: Array,

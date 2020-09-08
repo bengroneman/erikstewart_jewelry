@@ -18,7 +18,7 @@
                 <div class="w-2/3 mx-auto py-24">
                     <h3 class="heading-2">{{ item.node.name }}</h3>
                     <div class="text-p pb-4" v-html="item.node.content"></div>
-                    <MagicButton link="/shop/">View</MagicButton>
+                    <MagicButton :link="`/shop/?${item.node.id}`">View</MagicButton>
                 </div>
             </div>
         </div>

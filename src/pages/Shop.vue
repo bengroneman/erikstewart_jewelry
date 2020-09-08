@@ -37,5 +37,9 @@ export default {
     ShopGrid,
     Hero
   },
+  async mounted() {
+    const id = this.$route.query.keys;
+    console.log(id);
+  },
 }
 </script>
