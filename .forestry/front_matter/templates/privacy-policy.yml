@@ -7,3 +7,5 @@ fields:
   config:
     required: false
   label: Page Title
+pages:
+- sub_pages/Privacy-Policy.md
