@@ -11,9 +11,10 @@
                 </g-link>
             </div>
             <nav class="nav right">
-                <g-link class="nav__link" to="/blog">Blog</g-link>
                 <g-link class="nav__link" to="/About">About</g-link>
-                <g-link class="nav__link" to="/shop">Shop</g-link>
+                <g-link class="nav__link" to="/shop">Jewelry</g-link>
+                <g-link class="nav__link" to="/bridal">Bridal</g-link>
+                <g-link class="nav__link" to="https://etsy.com">Etsy Shop</g-link>
                 <a class="nav__link" href="#contact">Say Hi!</a>
             </nav>
         </div>
