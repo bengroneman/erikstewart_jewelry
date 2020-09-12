@@ -1,0 +1,7 @@
+---
+label: Terms and Conditions
+hide_body: false
+fields:
+- type: text
+  name: page_title
+  label: page_title
