@@ -7,6 +7,10 @@ fields:
   config:
     required: false
   label: Name
+- name: categories
+  type: tag_list
+  default: []
+  label: Categories
 - name: image
   type: file
   config:
