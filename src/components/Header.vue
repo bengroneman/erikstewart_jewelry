@@ -1,6 +1,6 @@
 <template>
     <header class="header bg-gray-e z-50" :class="{sticky: $route.path === '/' || $route.path.includes('/shop/')}">
-        <div class="ml-24 mr-24 flex items-center h-full justify-between">
+        <div class="md:ml-24 md:mr-24 flex items-center h-full justify-between">
             <div class="">
                 <g-link :to="{ name: 'home' }" class="home-link">
                     <img 
@@ -10,11 +10,17 @@
                     />
                 </g-link>
             </div>
-            <nav class="nav right">
-                <g-link class="nav__link" to="/About">About</g-link>
-                <g-link class="nav__link" to="/shop">Jewelry</g-link>
-                <g-link class="nav__link" to="https://etsy.com">Etsy Shop</g-link>
+            <nav class="nav">
+                <g-link class="nav__link block md:inline" to="/About">About</g-link>
+                <g-link class="nav__link block md:inline" to="/shop">Jewelry</g-link>
+                <g-link class="nav__link block md:inline" to="https://etsy.com">Etsy Shop</g-link>
                 <a class="nav__link" href="#contact">Say Hi!</a>
+
+                <button type="button" class="text-gray-500 focus:text-white">
+                    <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
+                    </svg>
+                </button>
             </nav>
         </div>
     </header>
