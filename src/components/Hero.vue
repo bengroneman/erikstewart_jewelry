@@ -1,29 +1,21 @@
 <template>
-    <div class="w-full">
-      <div
-        class="m-24 flex flex-row bg-contain bg-no-repeat bg-right-top"
-        :style="{ backgroundImage: `url(${content.hero_image.src})` }"
-        :alt="content.hero_image.alt"
-       >
-        <div class="w-1/2"> 
-          <div class="headers">
-            <h1 class="heading-1 font-display" v-html="content.header" />
-            <h2 class="heading-2 uppercase font-display" v-html="content.sub_header" />
-          </div>
-          <div class="content"> 
-            <p class="text-p font-body mb-2" v-html="content.content"></p>
-            <MagicButton link="/shop">
-              View All
-            </MagicButton>
-          </div>
+  <div class="w-full">
+    <div
+      class="m-24 flex flex-row bg-contain bg-no-repeat bg-right-top"
+      :style="{ backgroundImage: `url(${content.hero_image.src})` }"
+      :alt="content.hero_image.alt"
+      >
+      <div class="w-1/2"> 
+        <div class="headers">
+          <h1 class="heading-1 font-display" v-html="content.header" />
+          <h2 class="heading-2 uppercase font-display" v-html="content.sub_header" />
         </div>
-      <div class="m-24">
-        <h1 class="text-10xl font-display tracking-wide" v-html="settings.hero_title" />
-        <h2 class="text-5xl font-display" v-html="settings.hero_subtitle" />
-        <p class="text-lg w-1/3 font-body mb-2" v-html="settings.hero_body"></p>
-        <MagicButton link="/shop">
-          View All
-        </MagicButton>
+        <div class="content"> 
+          <p class="text-p font-body mb-2" v-html="content.content"></p>
+          <MagicButton link="/shop">
+            View All
+          </MagicButton>
+        </div>
       </div>
     </div>
   </div>
