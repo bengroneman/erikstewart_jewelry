@@ -26,6 +26,7 @@
         </MagicButton>
       </div>
     </div>
+  </div>
 </template>
 
 <script>
