@@ -1,11 +1,11 @@
 <template>
   <div class="w-full">
     <div
-      class="m-24 flex flex-row bg-contain bg-no-repeat bg-right-top"
+      class="md:m-24 m-6 flex flex-row bg-contain bg-no-repeat bg-right-top"
       :style="{ backgroundImage: `url(${content.hero_image.src})` }"
       :alt="content.hero_image.alt"
       >
-      <div class="w-1/2"> 
+      <div class="md:w-1/2"> 
         <div class="headers">
           <h1 class="heading-1 font-display" v-html="content.header" />
           <h2 class="heading-2 uppercase font-display" v-html="content.sub_header" />
