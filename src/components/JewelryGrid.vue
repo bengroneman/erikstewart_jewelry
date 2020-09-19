@@ -1,12 +1,12 @@
 <template>
     <div class="w-full">
         <div
-            class="h-full flex mb-24"
+            class="h-full md:flex mb-24"
             :class="[isEven(index + 1) ? 'flex-row-reverse': '']"
             v-for="(item, index) in jewelry"
             :key="item.node.id"
         >
-            <div class="p-4 w-1/2">
+            <div class="p-4 md:w-1/2 w-full">
                 <g-link :to="item.node.path">
                 <g-image
                     :src="item.node.image.src"
@@ -14,8 +14,8 @@
                 />
                 </g-link>
             </div>
-            <div class="bg-gray-200 w-1/2">
-                <div class="w-2/3 mx-auto py-24">
+            <div class="bg-gray-200 md:w-1/2 w-full">
+                <div class="md:w-2/3 w-full mx-auto py-24">
                     <h3 class="heading-2">{{ item.node.name }}</h3>
                     <div class="text-p pb-4" v-html="item.node.content"></div>
                     <MagicButton :link="`/shop/?${item.node.id}`">View</MagicButton>
