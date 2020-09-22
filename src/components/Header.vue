@@ -30,7 +30,7 @@
             <g-link to="/jewelry" class="mt-1 block px-2 py-1 text-dark-gray-e font-semibold hover:text-white hover:bg-gray-800 sm:mt-0 sm:ml-2">Jewelry</g-link>
             <g-link to="/blog" class="mt-1 block px-2 py-1 text-dark-gray-e font-semibold hover:text-white hover:bg-gray-800 sm:mt-0 sm:ml-2">Blog</g-link>
             <g-link to="https://etsy.com" class="mt-1 block px-2 py-1 text-dark-gray-e font-semibold hover:text-white hover:bg-gray-800 sm:mt-0 sm:ml-2">Etsy Shop</g-link>
-            <a to="#contact" class="mt-1 block px-2 py-1 text-dark-gray-e font-semibold hover:text-white hover:bg-gray-800 sm:mt-0 sm:ml-2">Contact</a>
+            <a href="#contact" class="mt-1 block px-2 py-1 text-dark-gray-e font-semibold hover:text-white hover:bg-gray-800 sm:mt-0 sm:ml-2">Contact</a>
         </nav>
     </header>
 </template>
