@@ -19,6 +19,7 @@
           type="text"
           placeholder="Full Name"
           name="name"
+          v-model="formData.name"
         >
       </div>
         <div class="w-full md:w-1/2 px-3">
@@ -31,6 +32,7 @@
             type="text"
             placeholder="jane.doe@hey.com"
             name="emailaddress"
+            v-model="formData.emailaddress"
           >
         </div>
       </div>
@@ -41,8 +43,44 @@
         id="message"
         rows="4"
         name="message"
+        v-model="formData.message"
       ></textarea>
     </div>
-    <button class="text-uppercase bg-blue-gray-e text-white p-2 mt-2 flex pl-6 pr-6 text-light-e">Submit form</button>
+    <button
+      class="text-uppercase bg-blue-gray-e text-white p-2 mt-2 flex pl-6 pr-6 text-light-e"
+    >Submit form</button>
   </form>
 </template>
+<script>
+export default {
+  data() {
+    return {
+      loading: false,
+      errored: false,
+      formData: {
+        name: String,
+        emailaddress: String,
+        message: null,
+      },
+    }
+  },
+  methods: {
+    processForm: (submission) => {
+      const contactData = new FormData(submission);
+
+      contactData.append('contact');
+      fetch('/', {
+        method: 'POST',
+        body: contactData,
+      })
+      .then(() => {
+        console.log("success")
+      })
+      .catch((error) => {
+        console.log("failure");
+        console.log(error);
+      });
+    }
+  }
+}
+</script>
