@@ -1,5 +1,11 @@
 <template>
-  <form>
+  <form
+    name="contact"
+    method="POST"
+    data-netlify="true"
+    data-netlify-honeypot="bot-field"
+  >
+    <input type="hidden" name="contact" value="contact" />
     <h1 id="contact" class="text-6xl inline-block text-white">Contact</h1>
     <div class="flex flex-wrap -mx-3 mb-6">
       <div class="w-full md:w-1/2 pr-6 mb-6 md:mb-0">
