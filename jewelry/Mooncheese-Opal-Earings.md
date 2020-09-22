@@ -7,4 +7,4 @@ categories:
 - Fashion
 
 ---
-Mooncheese Opal Earrings lorem ipsum Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+The latest Mooncheese earrings set with these genuine Opal spheres. Fun, comfortable and very lightweight! Since the spheres are very hard to come by, these are very limited. No two Opals are the same.
