@@ -15,8 +15,10 @@
         </label>
         <input
           class="appearance-none block w-full bg-gray-200 text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-          id="name" type="text"
+          id="name"
+          type="text"
           placeholder="Full Name"
+          name="name"
         >
       </div>
         <div class="w-full md:w-1/2 px-3">
@@ -28,6 +30,7 @@
             id="grid-last-name"
             type="text"
             placeholder="jane.doe@hey.com"
+            name="emailaddress"
           >
         </div>
       </div>
@@ -37,6 +40,7 @@
         class="appearance-none block w-full bg-gray-200 text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
         id="message"
         rows="4"
+        name="message"
       ></textarea>
     </div>
     <button class="text-uppercase bg-blue-gray-e text-white p-2 mt-2 flex pl-6 pr-6 text-light-e">Submit form</button>
