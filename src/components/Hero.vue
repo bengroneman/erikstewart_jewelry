@@ -12,9 +12,7 @@
         </div>
         <div class="content"> 
           <p class="text-p font-body mb-2" v-html="content.content"></p>
-          <MagicButton link="/shop">
-            View All
-          </MagicButton>
+          <slot></slot>
         </div>
       </div>
     </div>
@@ -22,8 +20,6 @@
 </template>
 
 <script>
-import MagicButton from '@/components/MagicButton'
-
 export default {
   data() {
     return {
@@ -36,9 +32,6 @@ export default {
       required: true
     }
   },
-  components: {
-    MagicButton
-  }
 }
 </script>
 <!-- TODO: find a way to get graphql explore to work offline -->
