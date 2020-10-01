@@ -10,10 +10,14 @@
                 :alt="$static.contact_page.featured_image.alt"
             ></div>
         </div>
+
+        <div class="w-full bg-blue-gray-e p-4 text-white">
+            <img src="../../static/logo-black.png" alt="Erik Stewart logo" class="h-32" />
+            <p class="heading-3 text-white">erik stewart jewelry</p>
+        </div>
+
         <div class="h-content flex justify-between p-4 bg-blue-gray-e text-white">
-            <img src="" alt="" class="logo" />
             <div class="content">
-                <h2 class="heading-3">erik stewart jewelry</h2>
                 <p>by appointment</p>
                 <p>P.O box 57731</p>
                 <p>Tucson, Arizona 85732-7731</p>
@@ -39,7 +43,8 @@ import ContactForm from "@/components/ContactForm"
 export default {
     data() {
         return {
-            settings: require("../../data/theme.json")
+            settings: require("../../data/theme.json"),
+            logo: require("../../static/logo-black.png")
         }
     },
     components: {
