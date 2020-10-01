@@ -2,8 +2,8 @@
     <footer
         class="w-full"
     >
-        <div class="flex flex-row">
-            <ContactForm class="pl-24 pb-24 w-1/2 px-12 bg-black" />
+        <div class="md:flex md:flex-row">
+            <ContactForm class="pb-24 md:w-1/2 px-12 bg-black" />
             <div
                 class="w-1/2 bg-cover bg-no-repeat bg-right"
                 :style="{ backgroundImage: `url(${$static.contact_page.featured_image.src})`}"
@@ -11,12 +11,8 @@
             ></div>
         </div>
 
-        <div class="w-full bg-blue-gray-e p-4 text-white">
-            <img src="../../static/logo-black.png" alt="Erik Stewart logo" class="h-32" />
-            <p class="heading-3 text-white">erik stewart jewelry</p>
-        </div>
-
         <div class="h-content flex justify-between p-4 bg-blue-gray-e text-white">
+            <img src="../../static/logo-black.png" alt="erik stewart logo" class="h-6" />
             <div class="content">
                 <p>by appointment</p>
                 <p>P.O box 57731</p>
@@ -44,7 +40,7 @@ export default {
     data() {
         return {
             settings: require("../../data/theme.json"),
-            logo: require("../../static/logo-black.png")
+            logo: require("../../static/logo-black.png"),
         }
     },
     components: {

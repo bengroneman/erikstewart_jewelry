@@ -15,7 +15,7 @@
                 </g-link>
             </div>
             <div class="bg-gray-200 md:w-1/2 w-full">
-                <div class="md:w-2/3 w-full mx-auto py-24">
+                <div class="md:w-2/3 w-full mx-auto md:py-24 p-6">
                     <h3 class="heading-2">{{ item.node.name }}</h3>
                     <div class="text-p pb-4" v-html="item.node.content"></div>
                     <MagicButton :link="`/shop/?${item.node.id}#${item.node.name}`">View</MagicButton>

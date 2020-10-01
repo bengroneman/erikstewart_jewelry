@@ -9,7 +9,7 @@
     <input type="hidden" name="contact" value="contact" />
     <h1 id="contact" class="text-6xl inline-block text-white">Contact</h1>
     <div class="flex flex-wrap -mx-3 mb-6">
-      <div class="w-full md:w-1/2 pr-6 mb-6 md:mb-0">
+      <div class="w-full md:w-1/2 md:pr-6 mb-6 md:mb-0">
         <label class="block tracking-wide text-white text-xs font-bold mb-2" for="name">
           Name
         </label>
@@ -21,7 +21,7 @@
           name="name"
         >
       </div>
-        <div class="w-full md:w-1/2 px-3">
+        <div class="w-full md:w-1/2">
           <label class="block tracking-wide text-white text-xs font-bold mb-2" for="emailaddress">
               Email
           </label>
@@ -43,9 +43,7 @@
         name="message"
       ></textarea>
     </div>
-    <button
-      class="text-uppercase bg-blue-gray-e text-white p-2 mt-2 flex pl-6 pr-6 text-light-e"
-    >Submit form</button>
+    <button class="m-auto text-uppercase bg-blue-gray-e text-white p-2 mt-2 flex pl-6 pr-6 text-light-e">Submit form</button>
   </form>
 </template>
 <script>
