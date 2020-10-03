@@ -15,7 +15,7 @@
     "@sendgrid/mail": "^7.2.6",
     "gridsome": "^0.7.13",
     "gridsome-plugin-tailwindcss": "latest",
-    "tailwindcss": "^1.6.2",
+    "tailwindcss": "^1.8.0",
     "vue2-smooth-scroll": "^1.5.0"
   }
 }
