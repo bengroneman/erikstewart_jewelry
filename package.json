@@ -7,8 +7,13 @@
     "explore": "gridsome explore",
     "build:css": "npx tailwindcss build ./src/assets/tailwind.css -o ./src/assets/main-build.css",
     "build:all": "npm run build && npm run build:css"
+
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.31",
+    "@fortawesome/free-brands-svg-icons": "^5.15.0",
+    "@fortawesome/free-solid-svg-icons": "^5.15.0",
+    "@fortawesome/vue-fontawesome": "^2.0.0",
     "@gridsome/remark-prismjs": "0.3.0",
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/transformer-remark": "^0.6.2",
@@ -16,6 +21,7 @@
     "gridsome": "^0.7.13",
     "gridsome-plugin-tailwindcss": "latest",
     "tailwindcss": "^1.8.0",
+    "vue-fontawesome": "0.0.2",
     "vue2-smooth-scroll": "^1.5.0"
   }
 }

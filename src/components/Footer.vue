@@ -32,9 +32,7 @@
                     <g-link to="/term-conditions" class="block font-body">Terms and Conditions</g-link>
                     <g-link to="/privacy-policy" class="block font-body">Privacy Policy</g-link>
                 </div>
-                <div class="social flex flex-row">
-                    <span class="h-10 block"></span>
-                </div>
+                <SocialIcons />
             </div>
         </div>
         <span class="flex flex-row justify-center w-full bg-gray-e font-medium font-body text-dark-gray-e py-2">
@@ -54,6 +52,7 @@ query Contact {
 
 <script>
 import ContactForm from "@/components/ContactForm"
+import SocialIcons from "@/components/SocialIcons"
 
 export default {
     data() {
@@ -63,7 +62,8 @@ export default {
         }
     },
     components: {
-        ContactForm
+        ContactForm,
+        SocialIcons
     }
 }
 </script>
