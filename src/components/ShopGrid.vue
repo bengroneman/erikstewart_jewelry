@@ -1,5 +1,5 @@
 <template>
-  <div class="grid grid-cols-2 gap-4">
+  <div class="grid md:grid-cols-2 grid-cols-1 gap-4">
     <div class="col-span-1 mb-12" v-for="item in jewelry" :key="item.node.id">
       <g-link :to="item.node.path" :id="item.node.name">
         <g-image

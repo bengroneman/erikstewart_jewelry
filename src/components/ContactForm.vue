@@ -43,7 +43,7 @@
         name="message"
       ></textarea>
     </div>
-    <button class="m-auto text-uppercase bg-blue-gray-e text-white p-2 mt-2 flex pl-6 pr-6 text-light-e">Submit form</button>
+    <button class="ml-0 mx-auto text-uppercase bg-blue-gray-e text-white p-2 mt-2 flex pl-6 pr-6 text-light-e">Submit form</button>
   </form>
 </template>
 <script>
