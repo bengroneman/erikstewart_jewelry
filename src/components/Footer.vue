@@ -14,7 +14,7 @@
                 <img src="../../static/logo-black.png" alt="erik stewart logo" class="h-24 mr-3 mt-3 m-auto" />
             </div>
 
-            <div class="font-body w-4/5 grid grid-cols-4">
+            <div class="font-body w-4/5 grid md:grid-cols-4 grid-cols-1 m-auto">
                 <div class="content">
                     <h1 class="heading-3 text-white lowercase">{{ settings.site_name }}</h1>
                     <p class="font-body">by appointment</p>

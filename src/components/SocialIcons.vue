@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-evenly items-center">
+  <div class="flex md:justify-evenly items-center md:m-0 mt-8 space-x-4">
     <a v-if="settings.twitter" :href="settings.twitter" alt="erik stewart jewelry twitter">
       <font-awesome-icon :icon="['fab', 'twitter']" class="text-3xl" />
     </a>
