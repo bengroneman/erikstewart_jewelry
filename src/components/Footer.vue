@@ -14,15 +14,15 @@
                 <img src="../../static/logo-black.png" alt="erik stewart logo" class="h-24 mr-3 mt-3 m-auto" />
             </div>
 
-            <div class="font-body w-4/5 flex flex-row justify-between">
-                <div class="block sm:flex">
+            <div class="font-body w-4/5 grid grid-cols-4">
+                <div class="content">
                     <h1 class="heading-3 text-white lowercase">{{ settings.site_name }}</h1>
                     <p class="font-body">by appointment</p>
 
                     <p class="font-body">{{ settings.address_line_1 }}</p>
                     <p class="font-body">{{ settings.address_line_2 }}</p>
                 </div>
-                <div class="w-full block sm:flex sm:w-auto">
+                <div class="content">
                     <span class="h-10 block"></span>
                     <a href="mailto:info@erikstewartjewelry.com" class="block font-body">info@erikstewartjewelry.com</a>
                     <a href="tel:+14807347805" class="block font-body">{{ settings.phone_number }}</a>
