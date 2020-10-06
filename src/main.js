@@ -9,13 +9,13 @@ import "@/assets/fonts.css"
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faUserSecret } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import { faFontAwesome } from '@fortawesome/free-brands-svg-icons'
+import { faTwitter, faInstagram, faPinterest, faEtsy, faFacebook } from '@fortawesome/free-brands-svg-icons'
 
 
 import '@/assets/main-build.css'
 
 library.add(faUserSecret)
-library.add(faFontAwesome)
+library.add([faTwitter, faInstagram, faPinterest, faEtsy, faFacebook])
 
 export default function(Vue, { head }) {
   Vue.component('Layout', DefaultLayout);
