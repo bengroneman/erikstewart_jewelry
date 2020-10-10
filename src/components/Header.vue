@@ -4,13 +4,13 @@
     >
         <div class="flex items-center justify-between px-4 py-3 sm:p-0">
             <div>
-                <g-link :to="{ name: 'home' }">
+                <router-link :to="{ name: 'home' }">
                     <img 
                         src="../../static/logo-black.png"
                         :alt="settings.site_name" 
                         class="h-16"
                     />
-                </g-link>
+                </router-link>
             </div>
             <div class="sm:hidden">
                 <button
@@ -26,10 +26,10 @@
             </div>
         </div>
         <nav :class="navOpen ? 'block' : 'hidden'" class="px-2 pt-2 pb-4 sm:flex sm:p-0">
-            <g-link to="/about" class="mt-1 block px-2 py-1 text-dark-gray-e font-semibold hover:text-white hover:bg-gray-800 sm:mt-0 sm:ml-2">About</g-link>
-            <g-link to="/shop" class="mt-1 block px-2 py-1 text-dark-gray-e font-semibold hover:text-white hover:bg-gray-800 sm:mt-0 sm:ml-2">Jewelry</g-link>
-            <g-link to="/blog" class="mt-1 block px-2 py-1 text-dark-gray-e font-semibold hover:text-white hover:bg-gray-800 sm:mt-0 sm:ml-2">Blog</g-link>
-            <g-link to="https://etsy.com" class="mt-1 block px-2 py-1 text-dark-gray-e font-semibold hover:text-white hover:bg-gray-800 sm:mt-0 sm:ml-2">Shop</g-link>
+            <router-link to="/about" class="mt-1 block px-2 py-1 text-dark-gray-e font-semibold hover:text-white hover:bg-gray-800 sm:mt-0 sm:ml-2">About</router-link>
+            <router-link to="/shop" class="mt-1 block px-2 py-1 text-dark-gray-e font-semibold hover:text-white hover:bg-gray-800 sm:mt-0 sm:ml-2">Jewelry</router-link>
+            <router-link to="/blog" class="mt-1 block px-2 py-1 text-dark-gray-e font-semibold hover:text-white hover:bg-gray-800 sm:mt-0 sm:ml-2">Blog</router-link>
+            <router-link to="https://etsy.com" class="mt-1 block px-2 py-1 text-dark-gray-e font-semibold hover:text-white hover:bg-gray-800 sm:mt-0 sm:ml-2">Shop</router-link>
             <a href="#contact" class="mt-1 block px-2 py-1 text-dark-gray-e font-semibold hover:text-white hover:bg-gray-800 sm:mt-0 sm:ml-2" v-smooth-scroll>Contact</a>
         </nav>
     </header>
