@@ -1,7 +1,5 @@
 <template>
-    <footer
-        class="w-full"
-    >
+    <footer class="w-full">
         <div class="md:flex md:flex-row">
             <ContactForm class="pb-24 md:w-1/2 px-12 bg-black" />
             <div
@@ -11,30 +9,50 @@
             ></div>
         </div>
 
-        <div class="h-content flex justify-between p-4 bg-blue-gray-e text-white">
-            <img src="../../static/logo-black.png" alt="erik stewart logo" class="h-6" />
-            <div class="content">
-                <p>by appointment</p>
-                <p>P.O box 57731</p>
-                <p>Tucson, Arizona 85732-7731</p>
+        <div class="h-content justify-evenly flex p-8 bg-blue-gray-e text-white w-full">
+            <div class="w-1/6">
+                <img src="../../static/logo-black.png" alt="erik stewart logo" class="h-24 mr-3 mt-3 m-auto" />
             </div>
-            <div class="content-contact">
-                <a href="mailto:info@erikstewartjewelry.com" class="block">info@erikstewartjewelry.com</a>
-                <a href="tel:+14807347805" class="block">(480) 734.7805</a>
-            </div>
-            <div class="content-policy">
-                <g-link to="/term-conditions" class="block">Terms and Conditions</g-link>
-                <g-link to="/privacy-policy" class="block">Privacy Policy</g-link>
-            </div>
-            <div class="social">
 
+            <div class="font-body w-4/5 grid md:grid-cols-4 grid-cols-1 m-auto">
+                <div class="content">
+                    <h1 class="heading-3 text-white lowercase">{{ settings.site_name }}</h1>
+                    <p class="font-body">by appointment</p>
+
+                    <p class="font-body">{{ settings.address_line_1 }}</p>
+                    <p class="font-body">{{ settings.address_line_2 }}</p>
+                </div>
+                <div class="content">
+                    <span class="h-10 block"></span>
+                    <a href="mailto:info@erikstewartjewelry.com" class="block font-body">info@erikstewartjewelry.com</a>
+                    <a href="tel:+14807347805" class="block font-body">{{ settings.phone_number }}</a>
+                </div>
+                <div class="content-policy">
+                    <span class="h-10 block"></span>
+                    <g-link to="/term-conditions" class="block font-body">Terms and Conditions</g-link>
+                    <g-link to="/privacy-policy" class="block font-body">Privacy Policy</g-link>
+                </div>
+                <SocialIcons />
             </div>
         </div>
+        <span class="flex flex-row justify-center w-full bg-gray-e font-medium font-body text-dark-gray-e py-2">
+            © 2020 {{ settings.site_name }}, llc. All rights reserved
+        </span>
     </footer>
 </template>
 
+<static-query>
+query Contact {
+  contact_page: subPages(path: "/sub-pages/contact/") {
+    id
+    featured_image
+  }
+}
+</static-query>
+
 <script>
 import ContactForm from "@/components/ContactForm"
+import SocialIcons from "@/components/SocialIcons"
 
 export default {
     data() {
@@ -44,15 +62,9 @@ export default {
         }
     },
     components: {
-        ContactForm
+        ContactForm,
+        SocialIcons
     }
 }
 </script>
-<static-query>
-query Contact {
-  contact_page: subPages(path: "/sub-pages/contact/") {
-    id
-    featured_image
-  }
-}
-</static-query>
+// TODO: parse the phone number to consistently update both the call back and the copy

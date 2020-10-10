@@ -1,9 +1,8 @@
 <template>
   <Layout>
-
     <div class="flex flex-row">
       <div
-        class="ml-40"
+        class="sm:ml-40 ml-2"
       >
         <h1 class="heading-1">
           blog
@@ -25,7 +24,6 @@
         <p class="journal-excerpt">{{ item.node.excerpt }}</p>
       </div>
     </g-link>
-      
   </Layout>
 </template>
 

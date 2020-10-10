@@ -1,12 +1,12 @@
 <template>
   <Layout>
     <section class="w-full" id="about">
-      <div class="ml-40 mb-24 mt-12">
+      <div class="md:ml-40 mx-8 mb-24 mt-12">
         <h1 class="heading-1">{{ $page.about_page.edges[0].node.header }}</h1>
         <h2 class="heading-2">{{ $page.about_page.edges[0].node.sub_header }}</h2>
         <div class="flex m-4">
           <div
-            class="w-2/3 bg-white"
+            class="md:w-2/3 w-full bg-white"
             v-html="$page.about_page.edges[0].node.content"
           >
           </div>
