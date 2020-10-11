@@ -6,7 +6,7 @@
     "develop": "gridsome develop",
     "explore": "gridsome explore",
     "build:css": "npx tailwindcss build ./src/assets/tailwind.css -o ./src/assets/main-build.css",
-    "build:all": "npm run build && npm run build:css"
+    "build:all": "npm run build:css && npm run build"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.31",
