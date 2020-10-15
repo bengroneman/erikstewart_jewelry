@@ -21,9 +21,7 @@
     "gridsome-plugin-tailwindcss": "latest",
     "tailwindcss": "^1.8.0",
     "vue-fontawesome": "0.0.2",
-    "vue2-smooth-scroll": "^1.5.0"
-  },
-  "devDependencies": {
+    "vue2-smooth-scroll": "^1.5.0",
     "vue-server-renderer": "^2.6.11"
   }
 }
