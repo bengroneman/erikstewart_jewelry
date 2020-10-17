@@ -7,6 +7,7 @@ module.exports = {
   host: "0.0.0.0",
   titleTemplate: "%s - Art for the Body",
   siteDescription: "Expertly crafted custom jewelry for the body",
+  chainWebpack: config => config.mode('development'),
   plugins: [
     {
       use: "@gridsome/source-filesystem",
