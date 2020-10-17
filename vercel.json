@@ -2,9 +2,9 @@
   "routes": [
     { "handle": "filesystem" },
     { "src": "/", "dest": "/index.html" },
-    { "src": "/about", "dest": "/index.html" },
-    { "src": "/shop", "dest": "/index.html" },
-    { "src": "/blog", "dest": "/index.html" },
+    { "src": "/about", "dest": "/about/index.html" },
+    { "src": "/shop", "dest": "/shop/index.html" },
+    { "src": "/blog", "dest": "/blog/index.html" },
     { "src": "/*", "dest": "/index.html" }
   ]
 }
