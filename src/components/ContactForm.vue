@@ -2,9 +2,6 @@
   <form
     name="contact"
     method="POST"
-    data-netlify="true"
-    data-netlify-honeypot="bot-field"
-    netlify
   >
     <input type="hidden" name="contact" value="contact" />
     <h1 id="contact" class="text-6xl inline-block text-white">Contact</h1>
