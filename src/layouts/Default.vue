@@ -1,9 +1,11 @@
 <template>
-  <div class="layout" :class="{ 'sticky-header': $route.path === '/' }">
-    <Header />
-    <slot/>
-    <Footer />
-  </div>
+  <client-only>
+    <div class="layout" :class="{ 'sticky-header': $route.path === '/' }">
+      <Header />
+      <slot/>
+      <Footer />
+    </div>
+  </client-only>
 </template>
 
 <script>
