@@ -19,7 +19,7 @@
           type="text"
           placeholder="Full Name"
           name="name"
-        >
+        />
       </div>
         <div class="w-full md:w-1/2">
           <label class="block tracking-wide text-white text-xs font-bold mb-2" for="emailaddress">
@@ -31,7 +31,7 @@
             type="text"
             placeholder="jane.doe@hey.com"
             name="emailaddress"
-          >
+          />
         </div>
       </div>
     <div class="flex flex-wrap -mx-3 mb-6">
@@ -46,8 +46,3 @@
     <button class="ml-0 mx-auto text-uppercase bg-blue-gray-e text-white p-2 mt-2 flex pl-6 pr-6 text-light-e">Submit form</button>
   </form>
 </template>
-<script>
-export default {
-
-}
-</script>
