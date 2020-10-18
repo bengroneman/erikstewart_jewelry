@@ -10,15 +10,15 @@ Seller hereby retains a security interest in the goods described here on until t
 
 All of our precious metals have been recycled, refined and ready for reuse. We do not resell metals from new deposits. Also, our genuine gemstones have been previously owned or mined from free-trade sources from around the world. We do our best to avoiding conflict and banned gemstones.
 
-Cancellations
+**Cancellations**
 
 Items special/custom ordered, altered, or manufactured to your specifications, cannot be accepted for refund, credit or exchange. Please keep this in mind when placing your order. If you have submitted an order by telephone, email or online ordering please contact us via email as soon as possible to determine whether your order can be changed or canceled. If you require a cancellation and have submitted a deposit toward a special/custom order, it may become forfeited at the point of cancellation additionally any unpaid balance may also be billed to you.
 
-Returns
+**Returns**
 
 Items special/custom ordered, altered, or manufactured to your specifications, cannot be accepted for refund, credit or exchange. Please keep this in mind when placing your order. If you are not satisfied with your non-custom order and wish to return merchandise (excluding the aforementioned above), we will give you full credit, provided you follow these procedures: All returns are to be received by Erik Stewart Jewelry within 30 days of shipped invoice date, must be accompanied by original receipt and must be in new unworn condition with original packaging. Items with manufacturing defects may be returned for exchange for up to one year from original purchase date. Please return merchandise and packaging, including envelopes, bags and boxes. Send with a written request along with a copy of your invoice. Merchandise returned without a request and a copy of the invoice may be charged a service fee of $10.00, or we may return the merchandise to you at your expense.
 
-Shipping
+**Shipping**
 
 Package merchandise securely, insure it, and ship it to: Erik Stewart Jewelry, LLC., Attention Customer Service, P.O. Box 57731, Tucson, AZ. 85732-7731 Or, take advantage of this easy-to-use service: We can provide you with a digital PDF USPS Priority Mail Label so you can print the return label from the convenience of your own computer. Then you can use USPS Carrier Pickup for package pickup the next postal delivery day when your carrier delivers your mail or bring your package to a USPS drop off location. No need to prepay the shipping charges. When your return is processed, a flat rate of $8.50 will be deducted from your credit invoice. If you would like to receive this label, you may request it via email. Refused, undeliverable, or unclaimed packages will be charged a 10% handling fee, plus postage. Erik Stewart Jewelry cannot be held responsible for returned merchandise if these procedures are not followed.
 
