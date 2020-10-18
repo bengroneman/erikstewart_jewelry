@@ -2,7 +2,7 @@
     <div 
         class="journal-content"
         v-html="content"
-    />
+    ></div>
 </template>
 
 <script>

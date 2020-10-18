@@ -8,10 +8,10 @@
         >
             <div class="p-4 md:w-1/2 w-full">
                 <g-link :to="item.node.path">
-                <g-image
-                    :src="item.node.image.src"
-                    :alt="item.node.name"
-                />
+                    <g-image
+                        :src="item.node.image.src"
+                        :alt="item.node.name"
+                    />
                 </g-link>
             </div>
             <div class="bg-gray-200 md:w-1/2 w-full">

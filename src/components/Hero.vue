@@ -7,12 +7,16 @@
       >
       <div class="md:w-1/2"> 
         <div class="headers">
-          <h1 class="heading-1 font-display" v-html="content.header" />
-          <h2 class="heading-2 uppercase font-display" v-html="content.sub_header" />
+          <h1 class="heading-1 font-display">
+            {{ content.header }}
+          </h1>
+          <h2 class="heading-2 uppercase font-display">
+            {{ content.sub_header }}
+          </h2>
         </div>
         <div class="content"> 
-          <p class="text-p font-body mb-2" v-html="content.content"></p>
-          <slot></slot>
+          <div class="text-p font-body mb-2" v-html="content.content"></div>
+          <slot/>
         </div>
       </div>
     </div>

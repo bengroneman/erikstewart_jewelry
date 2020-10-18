@@ -4,7 +4,7 @@
       <div class="mx-auto w-2/3">
 
         <div class="journal-header">
-          <h1 v-html="$page.post.title" class="heading-1" />
+          <h1 class="heading-1">{{ $page.post.title }}</h1>
           <div class="journal-meta">
             <div class="journal-author">
               <span class="label">Author</span>
