@@ -3,14 +3,12 @@ import settings from '../data/theme.json';
 
 import VueSmoothScroll from 'vue2-smooth-scroll'
 import "@/assets/code-highlight.css"
-import "@/assets/tailwind.css"
 import "@/assets/fonts.css"
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faUserSecret } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faTwitter, faInstagram, faPinterest, faEtsy, faFacebook } from '@fortawesome/free-brands-svg-icons'
-
 
 import '@/assets/main-build.css'
 

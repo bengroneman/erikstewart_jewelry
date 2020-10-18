@@ -4,13 +4,13 @@
     >
         <div class="flex items-center justify-between px-4 py-3 sm:p-0">
             <div>
-                <router-link :to="{ name: 'home' }">
+                <g-link :to="{ name: 'home' }">
                     <img 
                         src="../../static/logo-black.png"
                         :alt="settings.site_name" 
                         class="h-16"
                     />
-                </router-link>
+                </g-link>
             </div>
             <div class="sm:hidden">
                 <button
@@ -29,7 +29,7 @@
             <g-link to="/about/" class="mt-1 block px-2 py-1 text-dark-gray-e font-semibold hover:text-white hover:bg-gray-800 sm:mt-0 sm:ml-2">About</g-link>
             <g-link to="/shop/" class="mt-1 block px-2 py-1 text-dark-gray-e font-semibold hover:text-white hover:bg-gray-800 sm:mt-0 sm:ml-2">Jewelry</g-link>
             <g-link to="/blog/" class="mt-1 block px-2 py-1 text-dark-gray-e font-semibold hover:text-white hover:bg-gray-800 sm:mt-0 sm:ml-2">Blog</g-link>
-            <a to="https://etsy.com" class="mt-1 block px-2 py-1 text-dark-gray-e font-semibold hover:text-white hover:bg-gray-800 sm:mt-0 sm:ml-2">Shop</a>
+            <a to="https://etsy.com/" class="mt-1 block px-2 py-1 text-dark-gray-e font-semibold hover:text-white hover:bg-gray-800 sm:mt-0 sm:ml-2">Shop</a>
             <a href="#contact" class="mt-1 block px-2 py-1 text-dark-gray-e font-semibold hover:text-white hover:bg-gray-800 sm:mt-0 sm:ml-2" v-smooth-scroll>Contact</a>
         </nav>
     </header>
