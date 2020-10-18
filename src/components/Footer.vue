@@ -29,7 +29,7 @@
                 </div>
                 <div class="content-policy">
                     <span class="h-10 block"></span>
-                    <g-link to="/term-conditions" class="block font-body">Terms and Conditions</g-link>
+                    <g-link to="/terms-conditions" class="block font-body">Terms and Conditions</g-link>
                     <g-link to="/privacy-policy" class="block font-body">Privacy Policy</g-link>
                 </div>
                 <SocialIcons />
