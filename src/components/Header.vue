@@ -26,9 +26,9 @@
             </div>
         </div>
         <nav :class="navOpen ? 'block' : 'hidden'" class="px-2 pt-2 pb-4 sm:flex sm:p-0">
-            <g-link to="/about/" class="mt-1 block px-2 py-1 text-dark-gray-e font-semibold hover:text-white hover:bg-gray-800 sm:mt-0 sm:ml-2">About</g-link>
-            <g-link to="/shop/" class="mt-1 block px-2 py-1 text-dark-gray-e font-semibold hover:text-white hover:bg-gray-800 sm:mt-0 sm:ml-2">Jewelry</g-link>
-            <g-link to="/blog/" class="mt-1 block px-2 py-1 text-dark-gray-e font-semibold hover:text-white hover:bg-gray-800 sm:mt-0 sm:ml-2">Blog</g-link>
+            <g-link to="/about" class="mt-1 block px-2 py-1 text-dark-gray-e font-semibold hover:text-white hover:bg-gray-800 sm:mt-0 sm:ml-2">About</g-link>
+            <g-link to="/shop" class="mt-1 block px-2 py-1 text-dark-gray-e font-semibold hover:text-white hover:bg-gray-800 sm:mt-0 sm:ml-2">Jewelry</g-link>
+            <g-link to="/blog" class="mt-1 block px-2 py-1 text-dark-gray-e font-semibold hover:text-white hover:bg-gray-800 sm:mt-0 sm:ml-2">Blog</g-link>
             <a to="https://etsy.com/" class="mt-1 block px-2 py-1 text-dark-gray-e font-semibold hover:text-white hover:bg-gray-800 sm:mt-0 sm:ml-2">Shop</a>
             <a href="#contact" class="mt-1 block px-2 py-1 text-dark-gray-e font-semibold hover:text-white hover:bg-gray-800 sm:mt-0 sm:ml-2" v-smooth-scroll>Contact</a>
         </nav>
