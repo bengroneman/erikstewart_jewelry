@@ -7,7 +7,7 @@
           :alt="item.node.name"
           class="m-auto max-w-sm"
         />
-        <div class="h-full bg-gray-200 ">
+        <div class="h-full">
           <h3 class="heading-3 text-center mt-6">{{ item.node.name }}</h3>
         </div>
       </g-link>
