@@ -34,7 +34,7 @@ export default {
     content: {
       type: Object,
       required: true
-    }
+    },
   },
 }
 </script>
