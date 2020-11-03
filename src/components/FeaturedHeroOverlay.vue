@@ -17,6 +17,10 @@
           <slot/>
         </div>
       </div>
+      <font-awesome-icon
+        :icon="['fas', 'times']" class="text-3xl z-50"
+        @click="$emit('close')"
+      />
     </div>
   </div>
 </template>

@@ -2,13 +2,14 @@
   <Layout>
       <Hero :content="$page.shop_page" />
       <FeaturedHeroOverlay 
-        v-if="hasQueryParam()"
+        v-if="has_featured_jewelry"
         :jewelry="getJewelryById(route_query)"
         class="z-20 overlay-"
+        @close="has_featured_jewelry = false"
       />
       <ShopGrid
         :jewelry="$page.jewelry.edges"
-        :class="getJewelryId() ? 'dark-layout z-10': ''"
+        :class="has_featured_jewelry ? 'dark-layout z-10': ''"
       />
   </Layout>
 </template>
@@ -55,23 +56,25 @@ export default {
         type: String,
         default: ""
       },
+      has_featured_jewelry: {
+        type: Boolean,
+        default: false,
+      },
       loading: true,
       errored: false,
     }
   },
 
   async mounted() {
-    const query = Object.keys(this.$route.query)
-    if (!_.isEmpty(query)) {
-      this.route_query = query[0]
-      this.loading = !this.loading
-    } else {
-      console.error("Failed to fetch query parameter")
-      this.errored = true;
-    }
+    const query_param = this.getQueryParam()
+    if (!this.loading) {
+      this.route_query = query_param
+      this.has_featured_jewelry = true
+    } 
   },
 
   methods: {
+
     getJewelryId: function() {
       if(this.loading === false) {
         return this.route_query
@@ -84,11 +87,23 @@ export default {
       return !this.loading && this.route_query
     },
 
-    getJewelryById: function (id) {
+    getJewelryById: function(id) {
       return this.$page.jewelry.edges.filter((jewelry) => {
-        if (jewelry.node.id == id) { return jewelry.node }
+        if (jewelry.node.id == id) { 
+          console.log(jewelry.node)
+          return jewelry.node
+        }
       })
     },
+
+    getQueryParam: function() {
+      const query = Object.keys(this.$route.query)
+      if (!_.isEmpty(query)) {
+        this.loading = false
+        return query[0]
+      } 
+    },
+
   },
 
 }
