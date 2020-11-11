@@ -6,14 +6,16 @@ import "@/assets/code-highlight.css"
 import "@/assets/fonts.css"
 
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faUserSecret } from '@fortawesome/free-solid-svg-icons'
+import { faUserSecret, faTimes } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faTwitter, faInstagram, faPinterest, faEtsy, faFacebook } from '@fortawesome/free-brands-svg-icons'
 
 import '@/assets/main-build.css'
 
 library.add(faUserSecret)
-library.add([faTwitter, faInstagram, faPinterest, faEtsy, faFacebook])
+library.add([faTwitter, faInstagram, faPinterest, faEtsy, faFacebook, faTimes])
+
+import _ from 'lodash'
 
 export default function(Vue, { head }) {
   Vue.component('Layout', DefaultLayout);
@@ -22,4 +24,5 @@ export default function(Vue, { head }) {
     class: settings.dark_mode ? 'dark' : ''
   };
   Vue.use(VueSmoothScroll)
+  Vue.use(_)
 }
