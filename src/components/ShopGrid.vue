@@ -1,7 +1,7 @@
 <template>
   <div class="grid md:grid-cols-2 grid-cols-1 gap-4">
     <div class="col-span-1 mb-12" v-for="item in jewelry" :key="item.node.id">
-      <g-link :to="item.node.path" :id="item.node.name">
+      <g-link :to="`/shop/?${item.node.id}`" :id="item.node.name">
         <g-image
           :src="item.node.image.src"
           :alt="item.node.name"
@@ -19,8 +19,8 @@ export default {
   props: {
     jewelry: {
       type: Array,
-      required: true
-    }
-  }
+      required: true,
+    },
+  },
 }
 </script>

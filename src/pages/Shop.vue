@@ -56,24 +56,25 @@ export default {
         type: String,
         default: ""
       },
-      has_featured_jewelry: {
-        type: Boolean,
-        default: false,
-      },
+      has_featured_jewelry: false,
       loading: true,
       errored: false,
     }
   },
 
   async mounted() {
-    const query_param = this.getQueryParam()
-    if (!this.loading) {
-      this.route_query = query_param
-      this.has_featured_jewelry = true
-    } 
+    this.bootup()
   },
 
   methods: {
+
+    bootup: function() {
+      const query_param = this.getQueryParam()
+      if (!this.loading) {
+        this.route_query = query_param
+        this.has_featured_jewelry = true
+      } 
+    },
 
     getJewelryId: function() {
       if(this.loading === false) {
