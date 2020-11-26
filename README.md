@@ -1,4 +1,3 @@
-# Blue Dojo Dev - 2020 Portfolio rework
 ## How to get up and running
 **For development**
 ```
