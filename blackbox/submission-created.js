@@ -8,11 +8,11 @@ exports.handler = async event => {
   console.log(email);
   const msg = {
     to: 'bluegroneman10@gmail.com',
-    from: 'test@example.com',
+    from: 'hello@bluedojo.dev',
     subject: 'Sending with Twilio SendGrid is Fun',
     text: 'and easy to do anywhere, even with Node.js',
     html: '<strong>and easy to do anywhere, even with Node.js</strong>',
   };
-  //sgMail.send(msg);
+  sgMail.send(msg);
 }
 
