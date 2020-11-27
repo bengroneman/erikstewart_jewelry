@@ -2,6 +2,8 @@
   <form
     name="contact"
     method="POST"
+    id="contact-form"
+    netlify
   >
     <input type="hidden" name="contact" value="contact" />
     <h1 id="contact" class="text-6xl inline-block text-white">Contact</h1>
@@ -24,7 +26,7 @@
           </label>
           <input
             class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-            id="grid-last-name"
+            id="emailaddress"
             type="text"
             placeholder="jane.doe@hey.com"
             name="emailaddress"
@@ -40,6 +42,6 @@
         name="message"
       ></textarea>
     </div>
-    <button class="ml-0 mx-auto text-uppercase bg-blue-gray-e text-white p-2 mt-2 flex pl-6 pr-6 text-light-e">Submit form</button>
+    <input type="submit" class="ml-0 mx-auto text-uppercase bg-blue-gray-e text-white p-2 mt-2 flex pl-6 pr-6 text-light-e">Submit form</input>
   </form>
 </template>

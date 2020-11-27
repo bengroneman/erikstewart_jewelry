@@ -1,5 +1,5 @@
 <template>
-    <footer class="w-full">
+    <footer id="footer" class="w-full">
         <div class="md:flex md:flex-row">
             <ContactForm class="pb-24 md:w-1/2 px-12 bg-black" />
             <div
