@@ -7,14 +7,13 @@ if (process.env.NODE_ENV !== 'production') {
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 exports.handler = async event => {
-  const email = JSON.parse(event.body).payload.email
-  console.log(email);
+  const email_body = JSON.parse(event.body).payload.email
   const msg = {
     to: 'bluegroneman10@gmail.com',
     from: 'hello@bluedojo.dev',
     subject: 'Sending with Twilio SendGrid is Fun',
     text: 'and easy to do anywhere, even with Node.js',
-    html: '<strong>and easy to do anywhere, even with Node.js</strong>',
+    html: `<strong>${email_body}</strong>`,
   };
   sgMail.send(msg)
     .then(() => {
