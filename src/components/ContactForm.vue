@@ -3,7 +3,6 @@
     name="contact"
     method="POST"
     id="contact-form"
-    netlify
   >
     <input type="hidden" name="contact" value="contact" />
     <h1 id="contact" class="text-6xl inline-block text-white">Contact</h1>
