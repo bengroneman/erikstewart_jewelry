@@ -42,6 +42,6 @@
         name="message"
       ></textarea>
     </div>
-    <input type="submit" class="ml-0 mx-auto text-uppercase bg-blue-gray-e text-white p-2 mt-2 flex pl-6 pr-6 text-light-e">Submit form</input>
+    <input type="submit" class="ml-0 mx-auto text-uppercase bg-blue-gray-e text-white p-2 mt-2 flex pl-6 pr-6 text-light-e" value="submit form"/>
   </form>
 </template>
