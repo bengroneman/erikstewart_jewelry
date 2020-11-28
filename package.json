@@ -6,7 +6,9 @@
     "develop": "gridsome develop",
     "explore": "gridsome explore",
     "build:css": "npx tailwindcss build ./src/assets/tailwind.css -o ./src/assets/main-build.css",
-    "build:all": "npm run build:css && npm run build"
+    "build:all": "npm run build:css && npm run build",
+    "lint": "eslint --ext .js,.vue src",
+    "lint:fix": "eslint --ext .js,.vue src --fix"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.31",
@@ -23,5 +25,9 @@
     "lodash": "^4.17.20",
     "vue-server-renderer": "^2.6.12",
     "vue2-smooth-scroll": "^1.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.14.0",
+    "eslint-plugin-vue": "^7.1.0"
   }
 }

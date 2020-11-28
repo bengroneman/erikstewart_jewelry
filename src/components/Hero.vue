@@ -4,7 +4,7 @@
       class="md:m-24 m-6 flex flex-row bg-contain bg-no-repeat bg-right-top"
       :style="{ backgroundImage: `url(${content.hero_image.src})` }"
       :alt="content.hero_image.alt"
-      >
+    >
       <div class="md:w-1/2"> 
         <div class="headers">
           <h1 class="heading-1 font-display">
@@ -15,8 +15,11 @@
           </h2>
         </div>
         <div class="content"> 
-          <div class="text-p font-body mb-2" v-html="content.content"></div>
-          <slot/>
+          <div
+            class="text-p font-body mb-2"
+            v-html="content.content"
+          />
+          <slot />
         </div>
       </div>
     </div>
@@ -25,16 +28,16 @@
 
 <script>
 export default {
-  data() {
-    return {
-      settings: require("../../data/theme.json")
-    }
-  },
   props: {
     content: {
       type: Object,
       required: true
     },
+  },
+  data() {
+    return {
+      settings: require("../../data/theme.json")
+    }
   },
 }
 </script>
