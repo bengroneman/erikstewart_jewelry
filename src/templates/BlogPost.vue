@@ -2,17 +2,21 @@
   <Layout>
     <div class="journal">
       <div class="mx-auto w-2/3">
-
         <div class="journal-header">
-          <h1 class="heading-1">{{ $page.post.title }}</h1>
+          <h1 class="heading-1">
+            {{ $page.post.title }}
+          </h1>
           <div class="journal-meta">
             <div class="journal-author">
               <span class="label">Author</span>
-              <span class="author-name" v-text="$page.post.author" />
+              <span
+                class="author-name"
+                v-text="$page.post.author"
+              />
             </div>
             <div class="journal-date">
               <span class="label">Date</span>
-              <div v-text="$page.post.date"/>
+              <div v-text="$page.post.date" />
             </div>
             <div class="journal-time">
               <span class="label">Time</span>
@@ -22,7 +26,6 @@
         </div>
 
         <JournalContent :content="$page.post.content" />
-
       </div>
     </div>
   </Layout>

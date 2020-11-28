@@ -19,7 +19,7 @@ import _ from 'lodash'
 
 export default function(Vue, { head }) {
   Vue.component('Layout', DefaultLayout);
-  Vue.component('font-awesome-icon', FontAwesomeIcon)
+  Vue.component('FontAwesomeIcon', FontAwesomeIcon)
   head.bodyAttrs = {
     class: settings.dark_mode ? 'dark' : ''
   };

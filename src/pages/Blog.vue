@@ -14,14 +14,18 @@
     </div>
 
     <g-link 
+      v-for="item in $page.posts.edges"
+      :key="item.node.id" 
       :to="item.node.path"
-      v-for="item in $page.posts.edges" 
-      :key="item.node.id"
       class="journal-post"
     >
       <div class="container journal">
-        <h2 class="journal-title">{{ item.node.title }}</h2>
-        <p class="journal-excerpt">{{ item.node.excerpt }}</p>
+        <h2 class="journal-title">
+          {{ item.node.title }}
+        </h2>
+        <p class="journal-excerpt">
+          {{ item.node.excerpt }}
+        </p>
       </div>
     </g-link>
   </Layout>

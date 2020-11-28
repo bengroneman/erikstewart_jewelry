@@ -1,8 +1,8 @@
 <template>
-    <div 
-        class="journal-content"
-        v-html="content"
-    ></div>
+  <div 
+    class="journal-content"
+    v-html="content"
+  />
 </template>
 
 <script>
