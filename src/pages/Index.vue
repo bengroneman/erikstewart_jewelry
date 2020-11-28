@@ -32,11 +32,11 @@ query Home {
     }
   },
   home_page: subPages(path: "/sub-pages/home/") {
-      id
-  		hero_image
-    	content
-    	header
-    	sub_header
+    id
+    hero_image
+    content
+    header
+    sub_header
   }
 }
 </page-query>
@@ -44,14 +44,12 @@ query Home {
 <script>
 import Hero from "@/components/Hero"
 import JewelryGrid from "@/components/JewelryGrid"
-import LatestJournals from "@/components/LatestJournals"
 import MagicButton from "@/components/MagicButton"
 
 export default {
   components: {
     Hero,
     JewelryGrid,
-    LatestJournals,
     MagicButton,
   }
 }
