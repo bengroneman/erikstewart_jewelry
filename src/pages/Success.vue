@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <ContentSection :content="success_content">
-      <MagicButton link="/">Back Home</MagicButton>
+      <MagicButton link="/" color="light">Back Home</MagicButton>
     </ContentSection>
   </Layout>
 </template>
@@ -22,4 +22,3 @@ export default {
   },
 }
 </script>
-    Default

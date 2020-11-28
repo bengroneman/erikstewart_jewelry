@@ -5,9 +5,9 @@
         <h1 class="heading-1 font-display uppercase text-white">
           {{ content.header }}
         </h1>
-        <h1 class="heading-3 uppercase font-display text-white">
+        <h3 class="heading-3 font-body text-white">
           {{ content.sub_header }}
-        </h1>
+        </h3>
       </div>
       <div class="content"> 
         <slot/>
@@ -17,6 +17,7 @@
 </template>
 
 <script>
+// TODO: use named props for this component (improves readability)
 export default {
   props: {
     content: {
