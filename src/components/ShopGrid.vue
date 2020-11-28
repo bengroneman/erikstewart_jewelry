@@ -1,14 +1,23 @@
 <template>
   <div class="grid md:grid-cols-2 grid-cols-1 gap-4">
-    <div class="col-span-1 mb-12" v-for="item in jewelry" :key="item.node.id">
-      <g-link :to="`/shop/?${item.node.id}`" :id="item.node.name">
+    <div
+      v-for="item in jewelry"
+      :key="item.node.id"
+      class="col-span-1 mb-12"
+    >
+      <g-link
+        :id="item.node.name"
+        :to="`/shop/?${item.node.id}`"
+      >
         <g-image
           :src="item.node.image.src"
           :alt="item.node.name"
           class="m-auto max-w-sm"
         />
         <div class="h-full">
-          <h3 class="heading-3 text-center mt-6">{{ item.node.name }}</h3>
+          <h3 class="heading-3 text-center mt-6">
+            {{ item.node.name }}
+          </h3>
         </div>
       </g-link>
     </div>

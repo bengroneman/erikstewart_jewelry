@@ -1,16 +1,16 @@
 <template>
   <Layout>
-      <Hero :content="$page.shop_page" />
-      <FeaturedHeroOverlay 
-        v-if="has_featured_jewelry"
-        :jewelry="getJewelryById(route_query)"
-        class="z-20 overlay-"
-        @close="has_featured_jewelry = false"
-      />
-      <ShopGrid
-        :jewelry="$page.jewelry.edges"
-        :class="has_featured_jewelry ? 'dark-layout z-10': ''"
-      />
+    <Hero :content="$page.shop_page" />
+    <FeaturedHeroOverlay 
+      v-if="has_featured_jewelry"
+      :jewelry="getJewelryById(route_query)"
+      class="z-20 overlay-"
+      @close="has_featured_jewelry = false"
+    />
+    <ShopGrid
+      :jewelry="$page.jewelry.edges"
+      :class="has_featured_jewelry ? 'dark-layout z-10': ''"
+    />
   </Layout>
 </template>
 

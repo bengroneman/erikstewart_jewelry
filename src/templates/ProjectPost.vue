@@ -1,20 +1,20 @@
 <template>
   <Layout>
     <div class="project">
-
       <div class="container">
-
         <div class="project-header">
-          <h1 class="project-title" v-html="$page.post.title" />
+          <h1
+            class="project-title"
+            v-html="$page.post.title"
+          />
           <div class="project-info">
-
             <div class="categories-container">
               <div class="categories">
                 <span class="label">Categories</span>
                 <span 
+                  v-for="(category, index) in $page.post.categories"
+                  :key="index" 
                   class="category"
-                  v-for="(category, index) in $page.post.categories" 
-                  :key="index"
                   v-text="category"
                 />
               </div>
@@ -22,15 +22,16 @@
 
             <div class="year-container">
               <span class="label">Year</span>
-              <div v-html="$page.post.date"></div>
+              <div v-html="$page.post.date" />
             </div>
           </div>
         </div>
 
-        <div v-html="$page.post.content" class="content"></div>
-
+        <div
+          class="content"
+          v-html="$page.post.content"
+        />
       </div>
-
     </div>
   </Layout>
 </template>

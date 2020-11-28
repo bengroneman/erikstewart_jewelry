@@ -5,7 +5,7 @@
       class="text-uppercase uppercase font-semibold p-2 mt-2 flex pl-6 pr-6"
       :class="getButtonColor"
     >
-      <slot></slot>
+      <slot />
     </g-link>
   </button>
 </template>
