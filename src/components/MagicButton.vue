@@ -10,12 +10,14 @@
 </template>
 
 <script>
+// TODO: add color props
 export default {
   props: {
     link: {
       type: String,
       required: true
     },
+    color: "",
   }
 }
 </script>
