@@ -26,7 +26,6 @@
 </template>
 
 <script>
-import MagicButton from '@/components/MagicButton'
 
 export default {
     // TODO: have the magic button pass a jewelry id to the shop page
@@ -35,9 +34,6 @@ export default {
             type: Array,
             required: true
         }
-    },
-    components: {
-        MagicButton
     },
     methods: {
         isEven(num) {

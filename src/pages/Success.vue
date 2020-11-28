@@ -1,15 +1,12 @@
 <template>
-  <Default>
+  <Layout>
     <ContentSection :content="success_content">
       <MagicButton link="/">Back Home</MagicButton>
     </ContentSection>
-  </Default>
+  </Layout>
 </template>
 <script>
-// TODO: hoist default and magicbutton to global scope and clean up components
-import Default from '@/layouts/Default'
 import ContentSection from '@/components/ContentSection'
-import MagicButton from '@/components/MagicButton'
 
 export default {
   data() {
@@ -22,8 +19,6 @@ export default {
   },
   components: {
     ContentSection,
-    MagicButton,
-    Default,
   },
 }
 </script>

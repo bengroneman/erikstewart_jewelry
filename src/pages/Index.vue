@@ -45,14 +45,12 @@ query Home {
 import Hero from "@/components/Hero"
 import JewelryGrid from "@/components/JewelryGrid"
 import LatestJournals from "@/components/LatestJournals"
-import MagicButton from "@/components/MagicButton"
 
 export default {
   components: {
     Hero,
     JewelryGrid,
     LatestJournals,
-    MagicButton,
   }
 }
 </script>
