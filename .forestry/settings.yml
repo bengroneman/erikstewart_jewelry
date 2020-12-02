@@ -20,6 +20,14 @@ sections:
   - jewelry
 - type: heading
   label: Resources
+- type: directory
+  path: testimonial
+  label: Testimonials
+  create: documents
+  match: "**/*.md"
+  new_doc_ext: ".md"
+  templates:
+  - testimonial
 - type: document
   path: data/theme.json
   label: Theme config
