@@ -24,13 +24,6 @@ sections:
   path: data/theme.json
   label: Theme config
 - type: directory
-  path: testimonials
-  label: Testimonials
-  create: documents
-  match: "**/*"
-  templates:
-  - testimonials
-- type: directory
   path: blog
   label: Blog
   create: all
