@@ -25,7 +25,7 @@ sections:
   label: Testimonials
   create: documents
   match: "**/*.md"
-  new_doc_ext: ".md"
+  new_doc_ext: md
   templates:
   - testimonial
 - type: document

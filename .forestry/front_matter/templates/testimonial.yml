@@ -16,3 +16,5 @@ fields:
   config:
     required: false
   label: Author
+pages:
+- testimonial/Abbie-G-Testimonial.md
