@@ -2,7 +2,7 @@
 label: Testimonials
 hide_body: false
 fields:
-- name: testimonial
+- name: body
   type: textarea
   default: ''
   config:
@@ -10,20 +10,12 @@ fields:
     wysiwyg: false
     schema:
       format: markdown
-  label: Testimonial
+  label: Body
+  description: Testimonial given by the author
 - name: author
   type: text
   config:
     required: false
   label: Author
-- name: date
-  type: datetime
-  label: Date
-  description: ''
-  config:
-    required: false
-    date_format: 
-    time_format: 
-    display_utc: false
 pages:
 - testimonials/Ben-Groneman-Testimonial.md
