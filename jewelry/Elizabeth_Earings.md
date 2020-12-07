@@ -1,6 +1,6 @@
 ---
 price: 375
-name: Elizabeth Earings
+name: Elizabeth Earrings
 image: "/uploads/elizabeth-earrings-copy-230x230.jpg"
 
 ---
