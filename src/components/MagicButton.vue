@@ -17,7 +17,10 @@ export default {
       type: String,
       required: true
     },
-    color: "",
+    color: {
+      type: String,
+      default: "light",
+    },
   },
   computed: {
     getButtonColor: function() {

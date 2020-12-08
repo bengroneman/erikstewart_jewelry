@@ -21,6 +21,7 @@ query Page {
       node {
         id
         name
+        categories
         image
         price
       }

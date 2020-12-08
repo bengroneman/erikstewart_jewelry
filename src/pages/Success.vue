@@ -1,7 +1,10 @@
 <template>
   <Layout>
     <ContentSection :content="success_content">
-      <MagicButton link="/" color="light">Back Home</MagicButton>
+      <MagicButton
+        link="/"
+        color="light"
+      >Back Home</MagicButton>
     </ContentSection>
   </Layout>
 </template>

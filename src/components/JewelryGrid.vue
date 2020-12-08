@@ -33,7 +33,7 @@
 </template>
 
 <script>
-
+// TODO: use an html parser to sort out item.node.content instead of using v-html
 export default {
     // TODO: have the magic button pass a jewelry id to the shop page
     props: {
@@ -42,11 +42,18 @@ export default {
             required: true
         }
     },
+
+    computed: {
+      filterJewelry: function() {
+        return 'test'
+      },
+    },
+
     methods: {
         isEven(num) {
             if (num <= 0 ) { return false }
             return num % 2 == 0
         }
-    }
-}
+    },
+  }
 </script>

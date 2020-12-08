@@ -10,7 +10,7 @@
         </h3>
       </div>
       <div class="content"> 
-        <slot/>
+        <slot />
       </div>
     </div>
   </div>
