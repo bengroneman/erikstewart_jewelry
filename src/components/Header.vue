@@ -87,8 +87,6 @@ export default {
 .bg-gray-theme {
     background: #F5F7F7;
 }
-.g-link { 
-  @apply mt-1 block px-2 py-1 text-dark-gray-e font-semibold hover:text-white hover:bg-gray-800 sm:mt-0 sm:ml-2;
-}
+
 </style>
 <!-- TODO: dry this code up a bit with tailwind @apply directive -->
