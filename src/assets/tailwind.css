@@ -20,7 +20,7 @@
   @apply text-h3 tracking-h3 text-m-gray-e font-display;
 }
 .open {
-  @apply h-full w-full flex flex-column m-8 justify-center;
+  @apply h-full w-full flex flex-col m-8 justify-center;
 }
 .open > a {
   @apply block;
