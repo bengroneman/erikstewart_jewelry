@@ -1,13 +1,12 @@
 // This is where project configuration and installed plugin options are located.
 // Learn more: https://gridsome.org/docs/config
-
+// eslint-disable-next-line no-undef
 module.exports = {
   siteName: "Erik Stewart Jewelry",
   siteUrl: `erikstewartjewelry.com`,
   host: "0.0.0.0",
   titleTemplate: "%s - Art for the Body",
   siteDescription: "Expertly crafted custom jewelry for the body",
-  chainWebpack: config => config.mode('development'),
   plugins: [
     {
       use: "@gridsome/source-filesystem",
