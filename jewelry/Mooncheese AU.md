@@ -1,6 +1,7 @@
 ---
-categories: []
-price: 0
+categories:
+- bridal
+price: 
 name: Mooncheese
 image: "/uploads/mooncheese-18ktY.jpg"
 featured: false
