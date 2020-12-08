@@ -4,4 +4,4 @@ name: Arch
 image: "/uploads/arch-onyx-ring-230x230.jpg"
 
 ---
-"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+The understated elegance of this collection is a conversation starter. The Arch ring breaks away from the traditional band with volume, height, and the unique side setting of the stone.
