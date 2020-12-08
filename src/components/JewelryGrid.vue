@@ -33,7 +33,6 @@
 </template>
 
 <script>
-import MagicButton from '@/components/MagicButton'
 
 export default {
     components: {
