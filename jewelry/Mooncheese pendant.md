@@ -1,6 +1,7 @@
 ---
-categories: []
-price: 0
+categories:
+- womens
+price: 
 name: Mooncheese pendant
 image: "/uploads/DSC_3102.jpg"
 featured: false
