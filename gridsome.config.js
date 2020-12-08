@@ -48,6 +48,18 @@ module.exports = {
     {
       use: "@gridsome/source-filesystem",
       options: {
+        path: "testimonial/**/*.md",
+        typeName: "Testimonials",
+        resolveAbsolutePaths: true,
+        remark: {
+          externalLinksTarget: "_blank",
+          externalLinksRel: ["nofollow", "noopener", "noreferrer"]
+        }
+      }
+    },
+    {
+      use: "@gridsome/source-filesystem",
+      options: {
         path: "sub_pages/*.md",
         typeName: "SubPages",
         resolveAbsolutePaths: true,
