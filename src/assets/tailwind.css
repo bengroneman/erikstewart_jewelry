@@ -44,6 +44,14 @@
   @apply text-sm tracking-wider no-underline uppercase font-bold;
 }
 .g-link { 
-  @apply mt-1 block px-2 py-1 text-dark-gray-e font-semibold hover:text-white hover:bg-gray-800 sm:mt-0 sm:ml-2;
+  @apply mt-1 block px-2 py-1 text-dark-gray-e font-semibold;
+  &:hover { 
+    @apply text-white bg-gray-800; 
+  }
+}
+@responsive {
+  .sm\:.g-link { 
+    @apply mt-0 ml-2
+  }
 }
 @tailwind utilities;
