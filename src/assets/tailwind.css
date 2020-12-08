@@ -1,5 +1,15 @@
 @tailwind base;
 @tailwind components;
+.fade-enter-active,	
+.fade-leave-active {
+  @apply transition-all overflow-hidden visible absolute w-full;	
+}
+
+.fade-enter,	
+.fade-leave-to {	
+  @apply hidden w-full opacity-0;	
+}
+
 .heading-1 {
   @apply text-h1 leading-tight tracking-h1 text-dark-gray-e font-display;
 }
