@@ -12,6 +12,8 @@ Lavish yet seemingly simple, the Fluted design is a modern tribute to the fashio
 
 2012 Platinum Guild International Innovation Award, Red Carpet Jewelry Buyers Choice- Fluted ring
 
+2012 MarthaStewartWeddings.com “Platinum Fan Favorites.”. Featured ESJ Fluted ring as top voted bridal platinum design
+
 2011 Niche Award, Fine Jewelry Winner- Fluted ring
 
-2012 MarthaStewartWeddings.com “Platinum Fan Favorites.”. Featured ESJ Fluted ring as top voted bridal platinum design
+Autumn 2011 Royal Report “Irresistibility Resistant Platinum Jewelry.”: The Most Exclusive Czech English Lifestyle Magazine. Pages 48-50. Article featuring Erik Stewart and ESJ designs: Hollein ring/pendent, Fluted ring, and Metro ring
