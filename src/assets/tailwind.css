@@ -9,13 +9,28 @@
 .heading-3 {
   @apply text-h3 tracking-h3 text-m-gray-e font-display;
 }
-.fade-enter-active,
-.fade-leave-active {
-  @apply transition-all overflow-hidden visible absolute w-full;
+.open {
+  @apply h-full w-full flex flex-column m-8 justify-center;
 }
-
-.fade-enter,
-.fade-leave-to {
-  @apply hidden w-full opacity-0;
+.open > a {
+  @apply block;
+}
+.closed {
+  @apply hidden;
+}
+.header {
+  @apply relative h-24 z-10;
+}
+.header.sticky {
+  @apply fixed top-0 left-0 w-full;
+}
+.header > .container {
+  @apply flex justify-between items-center h-full;
+}
+.home-link {
+  @apply no-underline
+}
+.site-name {
+  @apply text-sm tracking-wider no-underline uppercase font-bold;
 }
 @tailwind utilities;
