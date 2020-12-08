@@ -89,4 +89,3 @@ export default {
 }
 
 </style>
-<!-- TODO: dry this code up a bit with tailwind @apply directive -->
