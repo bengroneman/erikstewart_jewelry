@@ -1,6 +1,6 @@
 ---
 price: 0
-name: Arch Earings
+name: Arch Earrings
 image: "/uploads/arch-earrings-peridot-230x230.jpg"
 
 ---
