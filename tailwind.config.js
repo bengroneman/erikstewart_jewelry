@@ -30,3 +30,5 @@ module.exports = {
   variants: {},
   plugins: [],
 }
+// TODO: upgrade Tailwindcss to V2.0
+// @RESOURCE: https://tailwindcss.com/docs/upgrading-to-v2

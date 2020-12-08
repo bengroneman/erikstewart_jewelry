@@ -8,8 +8,10 @@
 <script>
 export default {
     props: {
-        content: String,
-        default: "",
+        content: {
+            type: String,
+            default: "",
+        }
     }
 }
 </script>
