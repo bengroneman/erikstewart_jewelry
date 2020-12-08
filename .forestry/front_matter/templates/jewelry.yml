@@ -16,6 +16,7 @@ fields:
   config:
     maxSize: 64
   label: Image
+  default: "/uploads/Elizabeth_Erik_Stewart.jpg"
 - name: price
   type: number
   label: Price
