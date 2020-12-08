@@ -9,6 +9,10 @@
 import ContentSection from '@/components/ContentSection'
 
 export default {
+  components: {
+    ContentSection,
+  },
+
   data() {
     return {
       success_content: {
@@ -16,9 +20,6 @@ export default {
         sub_header: "Thank you for reaching out, I will be in touch within 48 hours."
       }
     }
-  },
-  components: {
-    ContentSection,
   },
 }
 </script>

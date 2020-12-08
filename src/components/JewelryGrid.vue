@@ -35,9 +35,6 @@
 <script>
 
 export default {
-    components: {
-        MagicButton
-    },
     // TODO: have the magic button pass a jewelry id to the shop page
     props: {
         jewelry: {
