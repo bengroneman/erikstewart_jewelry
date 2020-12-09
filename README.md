@@ -16,4 +16,4 @@ npm run build:all
 
 ## Contributors
 - [@KLovelace](https://dribbble.com/lovelacekn)
-- [@pkang29](https://github.com/paulkangdev)
+- [@paulkangdev](https://github.com/paulkangdev)
