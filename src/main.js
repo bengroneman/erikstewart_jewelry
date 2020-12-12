@@ -11,7 +11,7 @@ import { faUserSecret, faTimes } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faTwitter, faInstagram, faPinterest, faEtsy, faFacebook } from '@fortawesome/free-brands-svg-icons'
 
-import '@/assets/main-build.css'
+import '@/assets/tailwind.css'
 
 library.add(faUserSecret)
 library.add([faTwitter, faInstagram, faPinterest, faEtsy, faFacebook, faTimes])

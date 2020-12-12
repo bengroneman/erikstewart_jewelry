@@ -1,5 +1,14 @@
 // This is where project configuration and installed plugin options are located.
 // Learn more: https://gridsome.org/docs/config
+const tailwind = require('tailwindcss')
+const purgecss = require('@fullhuman/postcss-purgecss')
+
+const postcssPlugins = [
+  tailwind(),
+]
+
+if (process.env.NODE_ENV === 'production') postcssPlugins.push(purgecss(require('./purgecss.config.js')))
+
 // eslint-disable-next-line no-undef
 module.exports = {
   siteName: "Erik Stewart Jewelry",
@@ -67,9 +76,6 @@ module.exports = {
           externalLinksRel: ["nofollow", "noopener", "noreferrer"]
         }
       }
-    },
-    {
-      use: 'gridsome-plugin-tailwindcss',
     },
   ],
   transformers: {
