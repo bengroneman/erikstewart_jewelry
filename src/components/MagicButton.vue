@@ -19,7 +19,7 @@ export default {
     },
     color: {
       type: String,
-      default: "light",
+      default: "dark",
     },
   },
   computed: {
