@@ -34,7 +34,7 @@ content_sections:
   content: "\n_“My concepts reflect my lifelong story. The elements are purposeful
     and intentional expressed as Art for the Body.”  \n\\-Erik Stewart, G.G._\n\n###
     [See Awards and Publications here.](https://erikstewartjewelry.com/news/ \"News\")"
-  showcase_image: ''
+  showcase_image: "/uploads/Erik-Stewart-015-copy.jpg"
 
 ---
 
