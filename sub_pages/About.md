@@ -29,7 +29,7 @@ content_sections:
     Erik’s design concepts stem from the vivid imagery from his engagements with music, visual and performing arts (wife is a dancer), food, and travel. His strong affinity for **geometry within nature, minimalistic elegance, and transforming complexity into simplicity** are significant motifs in all of his jewelry. The ESJ brand is **innovative, conceptual, and dynamic.**
 
     With the objective of **challenging and expanding notions of jewelry design** by the jewelry industry, retail market, and himself, Erik Stewart welcomes every publishing/educating opportunity. Areas of expertise that he can speak on include: **jewelry design, design process, jewelry aesthetics, computer aided design (Matrix), gemology, and the relationship of architecture and jewelry.**
-  showcase_image: ''
+  showcase_image: "/uploads/mooncheese opal earrings.jpg"
 - template: content-block
   content: "\n_“My concepts reflect my lifelong story. The elements are purposeful
     and intentional expressed as Art for the Body.”  \n\\-Erik Stewart, G.G._\n\n###
