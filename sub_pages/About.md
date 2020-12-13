@@ -37,9 +37,10 @@ content_sections:
     and the relationship of architecture and jewelry.</strong></p>"
   showcase_image: "/uploads/mooncheese opal earrings.jpg"
 - template: content-block
-  content: "\n_“My concepts reflect my lifelong story. The elements are purposeful
-    and intentional expressed as Art for the Body.”  \n\\-Erik Stewart, G.G._\n\n###
-    [See Awards and Publications here.](https://erikstewartjewelry.com/news/ \"News\")"
+  content: <p>“My concepts reflect my lifelong story. The elements are purposeful
+    and intentional expressed as Art for the Body.” </p><p>-Erik Stewart, G.G.</p><h3><a
+    href="https://erikstewartjewelry.com/news/ " title="" target="_blank">See Awards
+    and Publications here</a></h3>
   showcase_image: "/uploads/Erik-Stewart-015-copy.jpg"
 
 ---
