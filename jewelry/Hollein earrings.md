@@ -1,9 +1,10 @@
 ---
 categories: []
-price: 0
+price: 
 name: Hollein earrings
 image: "/uploads/hollein-earrings-from-pgi-copy.jpg"
 featured: false
+category: Earings
 
 ---
 platinum + color-treated diamonds
