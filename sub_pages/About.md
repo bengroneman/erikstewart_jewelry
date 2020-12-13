@@ -23,7 +23,7 @@ content_sections:
     with master jewelers to manufacture all designs with superb care and the **highest
     level of quality.** After years of custom design and retail, Erik Stewart officially
     debuted into the wholesale market as a **JCK Rising Star (2012).**
-  showcase_image: ''
+  showcase_image: "/uploads/Elizabeth_Erik_Stewart.jpg"
 - template: content-block
   content: |-
     Erik’s design concepts stem from the vivid imagery from his engagements with music, visual and performing arts (wife is a dancer), food, and travel. His strong affinity for **geometry within nature, minimalistic elegance, and transforming complexity into simplicity** are significant motifs in all of his jewelry. The ESJ brand is **innovative, conceptual, and dynamic.**
