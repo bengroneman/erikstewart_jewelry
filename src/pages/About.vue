@@ -4,7 +4,6 @@
       id="about"
       class="w-full"
     >
-
       <div class="md:ml-40 mx-8 mb-24 mt-12">
         <h1>
           {{ content.header }}
@@ -20,13 +19,13 @@
           :key="index"
           :class="{'flex-row-reverse' : !(index % 2 == 0)}"
         >
-          <template v-slot:leftcolumn>
+          <template #leftcolumn>
             <div
-              v-html="block.content"
               class="py-12 pr-12"
+              v-html="block.content"
             />
           </template>
-          <template v-slot:rightcolumn>
+          <template #rightcolumn>
             <g-image
               :src="block.showcase_image.src"
               :alt="block.showcase_image.alt"
@@ -35,7 +34,6 @@
           </template>
         </TwoColumnSection>
       </div>
-
     </section>
   </Layout>
 </template>

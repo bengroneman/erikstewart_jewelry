@@ -3,9 +3,9 @@
     <transition name="slide-fade">
       <div class="h-full"> 
         <div 
+          v-for="i in [currentIndex]"
           :id="`testimonial-${i}`"
           :key="i"
-          v-for="i in [currentIndex]"
           class="w-full flex bg-light-gray-e justify-center p-12 pb-24"
         >
           <div class="w-2/3 text-4xl">

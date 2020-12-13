@@ -5,7 +5,7 @@
         Add some content
       </slot>
     </div>
-    <div class="m-12 flex w-1/2 justify-center" >
+    <div class="m-12 flex w-1/2 justify-center">
       <slot name="rightcolumn">
         Add some content
       </slot>
