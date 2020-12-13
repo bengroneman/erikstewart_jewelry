@@ -5,6 +5,7 @@ image: "/uploads/mooncheese opal earrings.jpg"
 featured: true
 categories:
 - Fashion
+category: Earings
 
 ---
 The latest Mooncheese earrings set with these genuine Opal spheres. Fun, comfortable and very lightweight! Since the spheres are very hard to come by, these are very limited. No two Opals are the same.
