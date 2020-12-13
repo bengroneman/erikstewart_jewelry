@@ -7,18 +7,23 @@ fields:
   config:
     required: false
   label: Name
-- name: categories
-  type: tag_list
-  label: Categories
-  default:
-    - Fashion
-    - Bridal
-    - Men
-    - Fashion
-    - Earings
-    - Pendant and Necklaces
-    - Bracelets
-- name: image
+- type: select
+  name: category
+  config:
+    source:
+      type: custom
+    options:
+      - "Fashion"
+      - "Bridal"
+      - "Men"
+      - "Fashion"
+      - "Earings"
+      - "Pendant and Necklaces"
+      - "Bracelets"
+    required: true
+  label: Author
+  default: Fashion
+  - name: image
   type: file
   config:
     maxSize: 64
