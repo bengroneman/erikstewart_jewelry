@@ -7,7 +7,7 @@
     >
       <div class="md:w-1/2"> 
         <div class="headers">
-          <h1>
+          <h1 class="py-4">
             {{ content.header }}
           </h1>
           <h2 class="heading-2 uppercase font-display">

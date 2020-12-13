@@ -11,6 +11,14 @@ fields:
   type: tag_list
   default: []
   label: Categories
+  tags:
+    - Fashion
+    - Bridal
+    - Men
+    - Fashion
+    - Earings
+    - Pendant and Necklaces
+    - Bracelets
 - name: image
   type: file
   config:
