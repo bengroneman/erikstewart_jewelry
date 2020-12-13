@@ -4,10 +4,10 @@
       <div
         class="sm:ml-40 ml-2"
       >
-        <h1 class="heading-1">
+        <h1>
           blog
         </h1>
-        <h2 class="heading-2">
+        <h2>
           Erik Stewart Jewelry
         </h2>
       </div>

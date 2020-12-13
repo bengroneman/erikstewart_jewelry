@@ -13,49 +13,23 @@
   transform: translateX(10px);
   opacity: 0;
 }
-
-.heading-1 {
-  @apply text-h1 leading-tight tracking-h1 text-dark-gray-e font-display;
-}
-.heading-2 {
-  @apply text-h2 tracking-h2 text-m-gray-e font-display;
-}
-.heading-3 {
-  @apply text-h3 tracking-h3 text-m-gray-e font-display;
-}
-.open {
-  @apply h-full w-full flex flex-col m-8 justify-center;
-}
-.open > a {
-  @apply block;
-}
-.closed {
-  @apply hidden;
-}
-.header {
-  @apply relative h-24 z-10;
-}
-.header.sticky {
-  @apply fixed top-0 left-0 w-full;
-}
-.header > .container {
-  @apply flex justify-between items-center h-full;
-}
-.home-link {
-  @apply no-underline
-}
-.site-name {
-  @apply text-sm tracking-wider no-underline uppercase font-bold;
-}
-.g-link { 
-  @apply mt-1 block px-2 py-1 text-dark-gray-e font-semibold;
-  &:hover { 
-    @apply text-white bg-gray-800; 
-  }
-}
-@responsive {
-  .sm\:.g-link { 
-    @apply mt-0 ml-2
-  }
-}
 @tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-h1 leading-tight tracking-h1 text-dark-gray-e font-display;
+  }
+  h2 {
+    @apply text-h2 tracking-h2 text-m-gray-e font-display;
+  }
+  h3 {
+    @apply text-h3 tracking-h3 text-m-gray-e font-display;
+  }
+  p {
+    @apply text-xl tracking-h3 text-m-gray-e font-display;
+  }
+  @font-face {
+    font-family: CenturyGothic;
+    src: url('../assets/fonts/CenturyGothic/GOTHIC.TTF');
+  }
+}

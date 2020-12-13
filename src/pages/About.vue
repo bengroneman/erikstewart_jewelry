@@ -5,7 +5,7 @@
       class="w-full"
     >
       <div class="md:ml-40 mx-8 mb-24 mt-12">
-        <h1 class="heading-1">
+        <h1>
           {{ $page.about_page.edges[0].node.header }}
         </h1>
         <h2 class="heading-2">

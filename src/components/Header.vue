@@ -83,9 +83,42 @@ export default {
 }
 </script>
 <style scoped>
-
-.bg-gray-theme {
-    background: #F5F7F7;
+.open {
+  @apply h-full w-full flex flex-col m-8 justify-center;
 }
-
+.open > a {
+  @apply block;
+}
+.closed {
+  @apply hidden;
+}
+.header {
+  @apply relative h-24 z-10;
+}
+.header.sticky {
+  @apply fixed top-0 left-0 w-full;
+}
+.header > .container {
+  @apply flex justify-between items-center h-full;
+}
+.home-link {
+  @apply no-underline
+}
+.site-name {
+  @apply text-sm tracking-wider no-underline uppercase font-bold;
+}
+.g-link { 
+  @apply mt-1 block px-2 py-1 text-dark-gray-e font-semibold;
+  &:hover { 
+    @apply text-white bg-gray-800; 
+  }
+}
+@responsive {
+  .sm\:.g-link { 
+    @apply mt-0 ml-2
+  }
+}
+.bg-gray-theme {
+  background: #F5F7F7;
+}
 </style>
