@@ -7,7 +7,7 @@
       class="z-20 overlay-"
       @close="has_featured_jewelry = false"
     />
-    <ShopGrid
+    <JewelryGrid
       :jewelry="$page.jewelry.edges"
       :class="has_featured_jewelry ? 'dark-layout z-10': ''"
     />
@@ -23,6 +23,7 @@ query Page {
         name
         image
         price
+        content
       }
     }
   },
@@ -33,21 +34,20 @@ query Page {
     header
     sub_header
     content
-  }
+  },
 }
 </page-query>
 
 <script>
-import ShopGrid from '@/components/ShopGrid'
 import Hero from '@/components/Hero'
 import FeaturedHeroOverlay from '@/components/FeaturedHeroOverlay'
+import JewelryGrid from '@/components/JewelryGrid'
 
 export default {
-
   components: {
-    ShopGrid,
     Hero,
     FeaturedHeroOverlay,
+    JewelryGrid
   },
 
   data() {
