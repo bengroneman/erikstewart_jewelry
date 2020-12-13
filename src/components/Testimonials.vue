@@ -1,35 +1,34 @@
 <template>
   <section>
-    <transition-group
-      name="slide"
-      tag="div"
-    >
-      <div 
-        :id="`testimonial-${i}`"
-        :key="i"
-        v-for="i in [currentIndex]"
-        class="w-full flex bg-light-gray-e justify-center p-12 pb-24"
-      >
-        <div class="w-2/3 text-4xl">
-          <span class="block text-6xl text-dark-gray-e relative -left-2 top-2">"</span>
-          {{ currentTestimonial.node.body }}
-          <span class="">"</span>
-          <span class="block mt-3">- {{ currentTestimonial.node.author }}</span>
-          <div class="flex justify-around mt-12">
-            <a
-              class="prev"
-              href="#"
-              @click="prev"
-            >&#10094;</a>
-            <a
-              class=""
-              href="#"
-              @click="next"
-            >&#10095;</a>
+    <transition name="slide-fade">
+      <div class="h-full"> 
+        <div 
+          :id="`testimonial-${i}`"
+          :key="i"
+          v-for="i in [currentIndex]"
+          class="w-full flex bg-light-gray-e justify-center p-12 pb-24"
+        >
+          <div class="w-2/3 text-4xl">
+            <span class="block text-6xl text-dark-gray-e relative -left-2 top-2">"</span>
+            {{ currentTestimonial.node.body }}
+            <span class="">"</span>
+            <span class="block mt-3">- {{ currentTestimonial.node.author }}</span>
+            <div class="flex justify-around mt-12">
+              <a
+                class="prev"
+                href="#"
+                @click="prev"
+              >&#10094;</a>
+              <a
+                class=""
+                href="#"
+                @click="next"
+              >&#10095;</a>
+            </div>
           </div>
         </div>
       </div>
-    </transition-group>
+    </transition>
   </section>
 </template>
 
@@ -69,7 +68,7 @@ export default {
 
   methods: {
     startSlide: function() {
-      this.timer = setInterval(this.next, 4000)
+      this.timer = setInterval(this.next, 20000)
     },
 
     next: function() {
