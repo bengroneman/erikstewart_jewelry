@@ -9,21 +9,22 @@ fields:
   label: Name
 - name: category
   type: select
-  name: category
+  default: []
   config:
-    source:
-      type: custom
+    required: false
     options:
-      - "Fashion"
-      - "Bridal"
-      - "Men"
-      - "Fashion"
-      - "Earings"
-      - "Pendant and Necklaces"
-      - "Bracelets"
-    required: true
+    - Fashion
+    - Bridal
+    - Bracelets
+    - Pendants & Necklaces
+    - Mens
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
   label: Category
-  - name: image
+- name: image
   type: file
   config:
     maxSize: 64
