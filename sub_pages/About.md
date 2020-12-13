@@ -8,10 +8,10 @@ header: About Erik
 sub_header: Art for the Body
 content_sections:
 - template: content-block
-  content: "**Contemporary sculptural form…Exquisite detail in design and workmanship…Clever
-    use of negative space…Intelligent settings…Erik Stewart Jewelry** presents a uniquely
+  content: "<p>Contemporary sculptural form…Exquisite detail in design and workmanship…Clever
+    use of negative space…Intelligent settings…Erik Stewart Jewelry presents a uniquely
     personal synthesis of architectural form and sophisticated style transformed into
-    **Art for the Body.**"
+    **Art for the Body.</p>"
   showcase_image: "/uploads/hollein-earrings-from-pgi-copy.jpg"
 - template: content-block
   content: Influenced by his mother (a jewelry designer) and father (an architect)
