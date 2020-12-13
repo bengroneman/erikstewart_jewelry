@@ -23,17 +23,17 @@
 
       <div class="font-body w-4/5 grid md:grid-cols-4 grid-cols-1 m-auto">
         <div class="content">
-          <h1 class="heading-3 text-white lowercase">
+          <h3 class="text-white">
             {{ settings.site_name }}
-          </h1>
-          <p class="font-body">
+          </h3>
+          <p class="font-body text-white">
             by appointment
           </p>
 
-          <p class="font-body">
+          <p class="font-body text-white">
             {{ settings.address_line_1 }}
           </p>
-          <p class="font-body">
+          <p class="font-body text-white">
             {{ settings.address_line_2 }}
           </p>
         </div>

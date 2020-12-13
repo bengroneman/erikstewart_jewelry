@@ -19,15 +19,15 @@
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/transformer-remark": "^0.6.3",
     "dotenv": "^8.2.0",
-    "gridsome": "^0.7.13",
+    "gridsome": "^0.7.22",
+    "gridsome-plugin-tailwindcss": "^3.0.1",
     "lodash": "^4.17.20",
+    "tailwindcss": "^1.9.6",
     "vue-server-renderer": "^2.6.12",
     "vue2-smooth-scroll": "^1.5.0"
   },
   "devDependencies": {
     "eslint": "^7.14.0",
-    "eslint-plugin-vue": "^7.1.0",
-    "gridsome-plugin-tailwindcss": "^4.1.1",
-    "tailwindcss": "^1.9.6"
+    "eslint-plugin-vue": "^7.1.0"
   }
 }

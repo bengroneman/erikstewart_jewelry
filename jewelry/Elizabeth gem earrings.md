@@ -1,9 +1,10 @@
 ---
 categories: []
-price: 0
+price: 
 name: Elizabeth gem earrings
 image: "/uploads/earrs.jpg"
 featured: false
+category: Earings
 
 ---
 palladium + colored diamonds + Arizona turquoise

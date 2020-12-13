@@ -1,21 +1,12 @@
 ---
 label: About
-hide_body: false
+hide_body: true
 fields:
 - name: featured_image
   type: file
   config:
     maxSize: 64
   label: Featured Image
-- name: excerpt
-  type: textarea
-  default: ''
-  config:
-    required: false
-    wysiwyg: false
-    schema:
-      format: markdown
-  label: Excerpt
 - name: header
   type: text
   default: About Erik
@@ -28,5 +19,13 @@ fields:
   config:
     required: false
   label: Sub Header
+- name: content_sections
+  type: blocks
+  template_types:
+  - content-block
+  config:
+    min: 
+    max: 
+  label: Content Sections
 pages:
 - sub_pages/About.md

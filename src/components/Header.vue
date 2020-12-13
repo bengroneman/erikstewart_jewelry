@@ -42,30 +42,30 @@
     >
       <g-link
         to="/about"
-        class="mt-1 block px-2 py-1 text-dark-gray-e font-semibold hover:text-white hover:bg-gray-800 sm:mt-0 sm:ml-2"
+        class="g-link"
       >
         About
       </g-link>
       <g-link
         to="/shop"
-        class="mt-1 block px-2 py-1 text-dark-gray-e font-semibold hover:text-white hover:bg-gray-800 sm:mt-0 sm:ml-2"
+        class="g-link"
       >
         Jewelry
       </g-link>
       <g-link
         to="/blog"
-        class="mt-1 block px-2 py-1 text-dark-gray-e font-semibold hover:text-white hover:bg-gray-800 sm:mt-0 sm:ml-2"
+        class="g-link"
       >
         Blog
       </g-link>
       <a
         to="https://etsy.com/"
-        class="mt-1 block px-2 py-1 text-dark-gray-e font-semibold hover:text-white hover:bg-gray-800 sm:mt-0 sm:ml-2"
+        class="g-link"
       >Shop</a>
       <a
         v-smooth-scroll
         href="#contact"
-        class="mt-1 block px-2 py-1 text-dark-gray-e font-semibold hover:text-white hover:bg-gray-800 sm:mt-0 sm:ml-2"
+        class="g-link"
       >Contact</a>
     </nav>
   </header>
@@ -84,48 +84,41 @@ export default {
 </script>
 <style scoped>
 .open {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin: 2rem;
-    justify-content: center;
+  @apply h-full w-full flex flex-col m-8 justify-center;
 }
 .open > a {
-    display: block;
+  @apply block;
 }
 .closed {
-    display: none;
+  @apply hidden;
 }
 .header {
-    position: relative;
-    height: 6rem;
-    z-index: 10;
+  @apply relative h-24 z-10;
 }
 .header.sticky {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+  @apply fixed top-0 left-0 w-full;
 }
 .header > .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 100%;
+  @apply flex justify-between items-center h-full;
 }
 .home-link {
-    text-decoration: none;
+  @apply no-underline
 }
 .site-name {
-    font-size: 0.9rem;
-    font-weight: 700;
-    letter-spacing: 0.05em;
-    text-decoration: none;
-    text-transform: uppercase;   
+  @apply text-sm tracking-wider no-underline uppercase font-bold;
+}
+.g-link { 
+  @apply mt-1 block px-2 py-1 text-dark-gray-e font-semibold;
+  &:hover { 
+    @apply text-white bg-gray-800; 
+  }
+}
+@responsive {
+  .sm\:.g-link { 
+    @apply mt-0 ml-2
+  }
 }
 .bg-gray-theme {
-    background: #F5F7F7;
+  background: #F5F7F7;
 }
 </style>
-<!-- TODO: dry this code up a bit with tailwind @apply directive -->

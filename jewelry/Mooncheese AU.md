@@ -5,6 +5,7 @@ price:
 name: Mooncheese
 image: "/uploads/mooncheese-18ktY.jpg"
 featured: false
+category: Bridal
 
 ---
 The Mooncheese suite is as pure in form and texture as the materials that make it. Sculpted by meteorites and unearthing a natural rough uncut diamond, this suite takes every-day jewelry to extraordinary dimensions. It’s incredible how the concave sur faces in the metal transform the simple design into dynamic jewelry with a minimal number of gemstones. Natural diamond color and shape are unique to each piece.

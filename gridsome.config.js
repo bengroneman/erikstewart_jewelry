@@ -1,26 +1,13 @@
 // This is where project configuration and installed plugin options are located.
 // Learn more: https://gridsome.org/docs/config
-
+// eslint-disable-next-line no-undef
 module.exports = {
   siteName: "Erik Stewart Jewelry",
   siteUrl: `erikstewartjewelry.com`,
   host: "0.0.0.0",
   titleTemplate: "%s - Art for the Body",
   siteDescription: "Expertly crafted custom jewelry for the body",
-  chainWebpack: config => config.mode('development'),
   plugins: [
-    {
-      use: "@gridsome/source-filesystem",
-      options: {
-        path: "projects/**/*.md",
-        typeName: "ProjectPost",
-        resolveAbsolutePaths: true,
-        remark: {
-          externalLinksTarget: "_blank",
-          externalLinksRel: ["nofollow", "noopener", "noreferrer"]
-        }
-      }
-    },
     {
       use: "@gridsome/source-filesystem",
       options: {
@@ -38,6 +25,18 @@ module.exports = {
       options: {
         path: "jewelry/**/*.md",
         typeName: "JewelryItem",
+        resolveAbsolutePaths: true,
+        remark: {
+          externalLinksTarget: "_blank",
+          externalLinksRel: ["nofollow", "noopener", "noreferrer"]
+        }
+      }
+    },
+    {
+      use: "@gridsome/source-filesystem",
+      options: {
+        path: "testimonial/**/*.md",
+        typeName: "Testimonials",
         resolveAbsolutePaths: true,
         remark: {
           externalLinksTarget: "_blank",

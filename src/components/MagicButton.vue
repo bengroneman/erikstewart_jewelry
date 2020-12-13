@@ -19,7 +19,7 @@ export default {
     },
     color: {
       type: String,
-      default: "light",
+      default: "dark",
     },
   },
   computed: {
@@ -28,13 +28,10 @@ export default {
       switch (button_color) {
         case "light":
           return "bg-white text-dark-gray-e"
-          break
         case "dark":
           return "bg-blue-gray-e text-white"
-          break
         default:
           return "bg-blue-gray-e text-white"
-          break
       }
     }
   }

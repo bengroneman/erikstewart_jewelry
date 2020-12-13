@@ -27,7 +27,10 @@ module.exports = {
       }
     },
   },
-  variants: {},
+  variants: {
+    textColor: ['hover'],
+    backgroundColor: ['hover']
+  },
   plugins: [],
 }
 // TODO: upgrade Tailwindcss to V2.0

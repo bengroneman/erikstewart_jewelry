@@ -1,12 +1,35 @@
 @tailwind base;
 @tailwind components;
-.heading-1 {
-  @apply text-h1 leading-tight tracking-h1 text-dark-gray-e font-display;
+/* Enter and leave animations can use different */
+/* durations and timing functions.              */
+.slide-fade-enter-active {
+  transition: all .3s ease;
 }
-.heading-2 {
-  @apply text-h2 tracking-h2 text-m-gray-e font-display;
+.slide-fade-leave-active {
+  transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
 }
-.heading-3 {
-  @apply text-h3 tracking-h3 text-m-gray-e font-display;
+.slide-fade-enter, .slide-fade-leave-to
+/* .slide-fade-leave-active below version 2.1.8 */ {
+  transform: translateX(10px);
+  opacity: 0;
 }
 @tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-h1 leading-tight tracking-h1 text-dark-gray-e font-display;
+  }
+  h2 {
+    @apply text-h2 tracking-h2 text-m-gray-e font-display;
+  }
+  h3 {
+    @apply text-h3 tracking-h3 text-m-gray-e font-display;
+  }
+  p {
+    @apply text-xl tracking-h3 text-m-gray-e font-display;
+  }
+  @font-face {
+    font-family: CenturyGothic;
+    src: url('../assets/fonts/CenturyGothic/GOTHIC.TTF');
+  }
+}

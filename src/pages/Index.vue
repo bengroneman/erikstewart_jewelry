@@ -6,6 +6,7 @@
       </MagicButton>
     </Hero>
     <JewelryGrid :jewelry="$page.jewelry.edges" />
+    <Testimonials />
   </Layout>
 </template>
 
@@ -44,13 +45,13 @@ query Home {
 <script>
 import Hero from "@/components/Hero"
 import JewelryGrid from "@/components/JewelryGrid"
-import MagicButton from "@/components/MagicButton"
+import Testimonials from "@/components/Testimonials"
 
 export default {
   components: {
     Hero,
     JewelryGrid,
-    MagicButton,
+    Testimonials,
   }
 }
 </script>

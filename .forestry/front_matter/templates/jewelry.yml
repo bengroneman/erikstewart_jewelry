@@ -7,10 +7,24 @@ fields:
   config:
     required: false
   label: Name
-- name: categories
-  type: tag_list
+- name: category
+  type: select
   default: []
-  label: Categories
+  config:
+    required: false
+    options:
+    - Fashion
+    - Bridal
+    - Bracelets
+    - Pendants & Necklaces
+    - Mens
+    - Earings
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Category
 - name: image
   type: file
   config:
