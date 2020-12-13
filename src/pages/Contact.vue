@@ -2,7 +2,7 @@
   <Layout>
     <div class="container">
       <div class="contact-header">
-        <h1 class="contact-title">
+        <h1>
           Say hi!
         </h1>
         <p>Leave me a note with any questions you might have, I'll get back to you as soon as possible.</p>

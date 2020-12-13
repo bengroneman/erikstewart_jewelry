@@ -23,7 +23,7 @@
 
       <div class="font-body w-4/5 grid md:grid-cols-4 grid-cols-1 m-auto">
         <div class="content">
-          <h1 class="heading-3 text-white lowercase">
+          <h1>
             {{ settings.site_name }}
           </h1>
           <p class="font-body">

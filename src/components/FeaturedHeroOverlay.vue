@@ -9,7 +9,7 @@
       </div>
       <div class="md:w-1/2 p-12">
         <div class="headers">
-          <h1 class="heading-2 font-display">
+          <h1>
             {{ jewelry[0].node.name }}
           </h1>
           <h2 class="heading-2 uppercase font-display">

@@ -3,7 +3,7 @@
     <div class="journal">
       <div class="mx-auto w-2/3">
         <div class="journal-header">
-          <h1 class="heading-1">
+          <h1>
             {{ $page.post.title }}
           </h1>
           <div class="journal-meta">
