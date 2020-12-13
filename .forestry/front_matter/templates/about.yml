@@ -30,7 +30,8 @@ fields:
   label: Sub Header
 - name: content_sections
   type: blocks
-  template_types: []
+  template_types:
+  - content-block
   config:
     min: 
     max: 
