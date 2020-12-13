@@ -28,5 +28,12 @@ fields:
   config:
     required: false
   label: Sub Header
+- name: content_sections
+  type: blocks
+  template_types: []
+  config:
+    min: 
+    max: 
+  label: Content Sections
 pages:
 - sub_pages/About.md
