@@ -22,14 +22,23 @@ content_sections:
     with master jewelers to manufacture all designs with superb care and the **highest
     level of quality.** After years of custom design and retail, Erik Stewart officially
     debuted into the wholesale market as a **JCK Rising Star (2012).**
+- template: content-block
+  content: Erik’s design concepts stem from the vivid imagery from his engagements
+    with music, visual and performing arts (wife is a dancer), food, and travel. His
+    strong affinity for **geometry within nature, minimalistic elegance, and transforming
+    complexity into simplicity** are significant motifs in all of his jewelry. The
+    ESJ brand is **innovative, conceptual, and dynamic.**
+- template: content-block
+  content: 'With the objective of **challenging and expanding notions of jewelry design**
+    by the jewelry industry, retail market, and himself, Erik Stewart welcomes every
+    publishing/educating opportunity. Areas of expertise that he can speak on include:
+    **jewelry design, design process, jewelry aesthetics, computer aided design (Matrix),
+    gemology, and the relationship of architecture and jewelry.**'
+- template: content-block
+  content: "\n_“My concepts reflect my lifelong story. The elements are purposeful
+    and intentional expressed as Art for the Body.”  \n\\-Erik Stewart, G.G._\n\n###
+    [See Awards and Publications here.](https://erikstewartjewelry.com/news/ \"News\")"
 
 ---
 
-Erik’s design concepts stem from the vivid imagery from his engagements with music, visual and performing arts (wife is a dancer), food, and travel. His strong affinity for **geometry within nature, minimalistic elegance, and transforming complexity into simplicity** are significant motifs in all of his jewelry. The ESJ brand is **innovative, conceptual, and dynamic.**
-
-With the objective of **challenging and expanding notions of jewelry design** by the jewelry industry, retail market, and himself, Erik Stewart welcomes every publishing/educating opportunity. Areas of expertise that he can speak on include: **jewelry design, design process, jewelry aesthetics, computer aided design (Matrix), gemology, and the relationship of architecture and jewelry.**
-
-_“My concepts reflect my lifelong story. The elements are purposeful and intentional expressed as Art for the Body.”  
-\-Erik Stewart, G.G._
-
-### [See Awards and Publications here.](https://erikstewartjewelry.com/news/ "News")
+### 
