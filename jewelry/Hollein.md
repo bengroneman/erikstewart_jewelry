@@ -5,6 +5,7 @@ price:
 name: Hollein
 image: "/uploads/erik-stewart-019-copy-copy.jpg"
 featured: false
+category: Bridal
 
 ---
 platinum + color-treated diamonds

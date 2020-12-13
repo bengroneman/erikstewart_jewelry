@@ -1,9 +1,10 @@
 ---
 categories: []
-price: 0
+price: 
 name: Hollein pendant
 image: "/uploads/hollein-pendant.jpg"
 featured: false
+category: Pendants & Necklaces
 
 ---
 platinum + color-treated diamonds
