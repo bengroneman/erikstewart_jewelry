@@ -1,5 +1,6 @@
 import DefaultLayout from '~/layouts/Default.vue';
 import MagicButton from '~/components/MagicButton.vue';
+
 import settings from '../data/theme.json';
 
 import VueSmoothScroll from 'vue2-smooth-scroll'
@@ -19,8 +20,8 @@ library.add([faTwitter, faInstagram, faPinterest, faEtsy, faFacebook, faTimes])
 import _ from 'lodash'
 
 export default function(Vue, { head }) {
-  Vue.component('Layout', DefaultLayout);
-  Vue.component('MagicButton', MagicButton);
+  Vue.component('Layout', DefaultLayout)
+  Vue.component('MagicButton', MagicButton)
   Vue.component('font-awesome-icon', FontAwesomeIcon)
   head.bodyAttrs = {
     class: settings.dark_mode ? 'dark' : ''

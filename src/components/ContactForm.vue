@@ -16,7 +16,10 @@
         Don’t fill this out: <input name="bot-field">
       </label>
     </p>
-    <h2 id="contact" class="text-white">
+    <h2
+      id="contact"
+      class="text-white"
+    >
       Contact
     </h2>
     <div class="flex flex-wrap -mx-3 mb-6">
