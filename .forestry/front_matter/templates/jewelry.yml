@@ -9,9 +9,8 @@ fields:
   label: Name
 - name: categories
   type: tag_list
-  default: []
   label: Categories
-  tags:
+  default:
     - Fashion
     - Bridal
     - Men
