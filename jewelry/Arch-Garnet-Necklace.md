@@ -5,6 +5,7 @@ image: "/uploads/DSC_3101.jpg"
 featured: true
 categories:
 - Fashion
+category: Pendants & Necklaces
 
 ---
 The Arch pendant is simply understood yet intriguing with its asymmetrical gemstone placement and use of negative space. Simple is sometimes underrated.
