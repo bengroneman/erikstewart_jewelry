@@ -1,6 +1,4 @@
 ---
-categories:
-- womens
 price: 
 name: Mooncheese pendant
 image: "/uploads/DSC_3102.jpg"

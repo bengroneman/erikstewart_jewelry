@@ -3,8 +3,6 @@ price: 2500
 name: Arch pendant
 image: "/uploads/DSC_3101.jpg"
 featured: true
-categories:
-- Fashion
 category: Pendants & Necklaces
 
 ---

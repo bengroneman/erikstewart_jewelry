@@ -3,8 +3,6 @@ price: 450
 name: Mooncheese Opal Earrings
 image: "/uploads/mooncheese opal earrings.jpg"
 featured: true
-categories:
-- Fashion
 category: Earings
 
 ---

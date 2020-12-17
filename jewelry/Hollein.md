@@ -1,6 +1,4 @@
 ---
-categories:
-- bridal
 price: 
 name: Hollein
 image: "/uploads/erik-stewart-019-copy-copy.jpg"

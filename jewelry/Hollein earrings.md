@@ -1,5 +1,4 @@
 ---
-categories: []
 price: 
 name: Hollein earrings
 image: "/uploads/hollein-earrings-from-pgi-copy.jpg"

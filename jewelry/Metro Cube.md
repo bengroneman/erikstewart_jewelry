@@ -1,5 +1,4 @@
 ---
-categories: []
 price: 
 name: Metro Cube
 image: "/uploads/metrocube-white-accents-persp.jpg"

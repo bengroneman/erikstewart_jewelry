@@ -1,5 +1,4 @@
 ---
-categories: []
 price: 
 name: Metro Cube pendant
 image: "/uploads/metro-cube-pendant-2.jpg"

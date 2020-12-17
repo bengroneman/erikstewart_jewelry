@@ -1,5 +1,4 @@
 ---
-categories: []
 price: 
 name: Elizabeth gem earrings
 image: "/uploads/earrs.jpg"

@@ -1,5 +1,4 @@
 ---
-categories: []
 price: 
 name: Hollein pendant
 image: "/uploads/hollein-pendant.jpg"

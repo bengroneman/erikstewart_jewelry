@@ -1,5 +1,4 @@
 ---
-categories: []
 price: 
 name: Fluted
 image: "/uploads/Erik_Stewart_Fluted_Platinum_ring.jpg"

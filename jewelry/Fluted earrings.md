@@ -1,5 +1,4 @@
 ---
-categories: []
 price: 
 name: Fluted earrings
 image: "/uploads/Fluted_earrings_erik_stewart.jpg"

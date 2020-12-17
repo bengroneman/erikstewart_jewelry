@@ -1,6 +1,4 @@
 ---
-categories:
-- bridal
 price: 
 name: Mooncheese
 image: "/uploads/mooncheese-18ktY.jpg"
