@@ -45,3 +45,4 @@ export default {
 <!-- TODO: write a query for the home page and pass the data down to this child component may need to rework some the theme file idea...? --> 
 
 <!-- TODO: Optimize images? Or look into using the gridsome quality parameter for images --> 
+

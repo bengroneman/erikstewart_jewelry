@@ -4,7 +4,9 @@
       <MagicButton
         link="/"
         color="light"
-      >Back Home</MagicButton>
+      >
+        Back Home
+      </MagicButton>
     </ContentSection>
   </Layout>
 </template>

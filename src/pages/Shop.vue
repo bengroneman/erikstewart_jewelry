@@ -1,16 +1,16 @@
 <template>
   <Layout>
     <Hero :content="$page.shop_page" />
-    <FeaturedHeroOverlay 
-      v-if="has_featured_jewelry"
-      :jewelry="getJewelryById(route_query)"
-      class="z-20 overlay-"
-      @close="has_featured_jewelry = false"
-    />
-    <JewelryGrid
-      :jewelry="$page.jewelry.edges"
-      :class="has_featured_jewelry ? 'dark-layout z-10': ''"
-    />
+    <div class="flex flex-row justify-around w-2/3 lg:w-1/3 m-auto py-12">
+      <span
+        v-for="(name, index) in jewelry_categories"
+        :key="index"
+        class="filter"
+      >
+        {{ name }}
+      </span>
+    </div>
+    <JewelryGrid :jewelry="$page.jewelry.edges" />
   </Layout>
 </template>
 
@@ -21,10 +21,10 @@ query Page {
       node {
         id
         name
-        categories
         image
         price
         content
+        category
       }
     }
   },
@@ -41,76 +41,50 @@ query Page {
 
 <script>
 import Hero from '@/components/Hero'
-import FeaturedHeroOverlay from '@/components/FeaturedHeroOverlay'
 import JewelryGrid from '@/components/JewelryGrid'
 
 export default {
   components: {
     Hero,
-    FeaturedHeroOverlay,
     JewelryGrid
   },
 
   data() {
     return {
-      route_query: {
-        type: String,
-        default: ""
-      },
-      has_featured_jewelry: false,
       loading: true,
       errored: false,
+      jewelry_categories: {
+        type: Array,
+        default: ['Bridal', 'Men', 'Fashion', 'Pendants & Necklace', 'Bracelets'],
+      },
     }
   },
 
   async mounted() {
-    this.bootup()
+    this.jewelry_categories = await this.getJewelryCategories()
   },
 
   methods: {
-
-    bootup: function() {
-      const query_param = this.getQueryParam()
-      if (!this.loading) {
-        this.route_query = query_param
-        this.has_featured_jewelry = true
-      } 
-    },
-
-    getJewelryId: function() {
-      if(this.loading === false) {
-        return this.route_query
-      } else {
-        return false
-      }
-    },
-
-    hasQueryParam: function() {
-      return !this.loading && this.route_query
-    },
-
-    getJewelryById: function(id) {
-      return this.$page.jewelry.edges.filter((jewelry) => {
-        if (jewelry.node.id == id) { 
-          console.log(jewelry.node)
-          return jewelry.node
-        }
+    async getJewelryCategories() {
+      const jewelry = this.$page.jewelry.edges
+      const categories = _.map(jewelry, function(j) {
+        return j.node.category
       })
+      const clean_categories = _.filter(categories, function(c) {
+        return !_.isEmpty(c)
+      })
+      return _.uniq(clean_categories)
     },
-
-    getQueryParam: function() {
-      const query = Object.keys(this.$route.query)
-      if (!_.isEmpty(query)) {
-        this.loading = false
-        return query[0]
-      } 
-    },
-
   },
-
 }
 </script>
 <style scoped>
+.filter {
+  @apply text-xl bg-gray-200 px-4 py-2 rounded-full text-dark-gray-e lowercase cursor-pointer transition-all;
+  &:hover {
+    @apply bg-gray-700 text-white;
+  }
+}
 .dark-layout:after {
   content: "";
   position: fixed; /* Sit on top of the page content */
