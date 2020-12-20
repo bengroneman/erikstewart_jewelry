@@ -8,11 +8,11 @@
           :key="i"
           class="w-full flex bg-light-gray-e justify-center p-12 pb-24"
         >
-          <div class="w-2/3 text-4xl">
+          <div class="w-2/3 text-3xl">
             <span class="block text-6xl text-dark-gray-e relative -left-2 top-2">"</span>
             {{ currentTestimonial.node.body }}
             <span class="">"</span>
-            <span class="block mt-3">- {{ currentTestimonial.node.author }}</span>
+            <span class="block mt-3 text-3xl">- {{ currentTestimonial.node.author }}</span>
             <div class="flex justify-around mt-12">
               <a
                 class="prev"
