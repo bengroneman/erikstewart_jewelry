@@ -6,9 +6,9 @@
       <div>
         <g-link :to="{ name: 'home' }">
           <img 
-            src="../../static/logo-black.png"
+            src="../../static/ESJ_Logo_Black.png"
             :alt="settings.site_name" 
-            class="h-16"
+            class="h-16 md:ml-16 ml-6"
           >
         </g-link>
       </div>

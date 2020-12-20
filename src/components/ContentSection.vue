@@ -2,7 +2,7 @@
   <div class="w-full bg-blue-gray-e">
     <div class="md:w-1/2 p-32"> 
       <div class="headers">
-        <h1>
+        <h1 class="text-gray-900">
           {{ content.header }}
         </h1>
         <h3 class="heading-3 font-body text-white">

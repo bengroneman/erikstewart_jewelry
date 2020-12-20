@@ -1,8 +1,8 @@
 <template>
-  <button>
+  <button class="pt-4">
     <g-link
       :to="link"
-      class="text-uppercase uppercase font-semibold p-2 mt-2 flex pl-6 pr-6"
+      class="text-uppercase uppercase font-semibold text-xl p-3 mt-2 flex pl-6 pr-6"
       :class="getButtonColor"
     >
       <slot />
