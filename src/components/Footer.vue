@@ -3,6 +3,7 @@
     id="footer"
     class="w-full"
   >
+    <span class="h-4 block w-full bg-dark-gray-e" />
     <div class="md:flex md:flex-row">
       <ContactForm class="pb-24 md:w-1/2 px-12 bg-black" />
       <div
@@ -37,7 +38,7 @@
             {{ settings.address_line_2 }}
           </p>
         </div>
-        <div class="content">
+        <div class="content pt-2">
           <span class="h-10 block" />
           <a
             href="mailto:info@erikstewartjewelry.com"
@@ -48,7 +49,7 @@
             class="block font-body"
           >{{ settings.phone_number }}</a>
         </div>
-        <div class="content-policy">
+        <div class="content-policy pt-2">
           <span class="h-10 block" />
           <g-link
             to="/terms-conditions"

@@ -18,7 +18,7 @@
     </p>
     <h2
       id="contact"
-      class="text-white"
+      class="text-white py-6"
     >
       Contact
     </h2>
