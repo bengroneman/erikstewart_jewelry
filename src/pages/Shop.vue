@@ -6,11 +6,20 @@
         v-for="(name, index) in jewelry_categories"
         :key="index"
         class="filter"
+        @click="filterView(name)"
       >
         {{ name }}
       </span>
     </div>
-    <JewelryGrid :jewelry="$page.jewelry.edges" />
+    <div class="w-full">
+      <JewelryCard
+        v-for="(j, index) in jewelry"
+        :key="index"
+        class="h-full md:flex mb-24"
+        :class="[index % 2 == 0 ? 'flex-row-reverse': '']"
+        :jewelry="j"
+      />
+    </div>
   </Layout>
 </template>
 
@@ -20,6 +29,7 @@ query Page {
     edges {
       node {
         id
+        path
         name
         image
         price
@@ -41,31 +51,41 @@ query Page {
 
 <script>
 import Hero from '@/components/Hero'
-import JewelryGrid from '@/components/JewelryGrid'
+import JewelryCard from '@/components/JewelryCard'
 
 export default {
   components: {
     Hero,
-    JewelryGrid
+    JewelryCard,
   },
 
   data() {
     return {
       loading: true,
       errored: false,
+      selectedCategories: [],
       jewelry_categories: {
         type: Array,
-        default: ['Bridal', 'Men', 'Fashion', 'Pendants & Necklace', 'Bracelets'],
+        default: () => {
+          return ['Bridal', 'Men', 'Fashion', 'Pendants & Necklace', 'Bracelets']
+        }
       },
+      filters: {
+        async filterView() {
+          // TODO: Filter jewelry
+        }
+      },
+      jewelry: [],
     }
   },
 
-  async mounted() {
-    this.jewelry_categories = await this.getJewelryCategories()
+  mounted() {
+    this.jewelry = this.$page.jewelry.edges
+    this.jewelry_categories = this.getJewelryCategories()
   },
 
   methods: {
-    async getJewelryCategories() {
+    getJewelryCategories: function () {
       const jewelry = this.$page.jewelry.edges
       const categories = _.map(jewelry, function(j) {
         return j.node.category

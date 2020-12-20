@@ -10,7 +10,9 @@ export default {
     props: {
         content: {
             type: String,
-            default: "",
+            default: () => {
+                return ""
+            },
         }
     }
 }

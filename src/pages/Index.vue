@@ -5,7 +5,13 @@
         View All
       </MagicButton>
     </Hero>
-    <JewelryGrid :jewelry="$page.jewelry.edges" />
+    <JewelryCard
+      v-for="(j, index) in jewelry"
+      :key="index"
+      class="h-full md:flex mb-24"
+      :class="[index % 2 == 0 ? 'flex-row-reverse': '']"
+      :jewelry="j"
+    />
     <Testimonials />
   </Layout>
 </template>
@@ -16,6 +22,7 @@ query Home {
     edges {
       node {
         id
+        path
         name
         image
         featured
@@ -44,14 +51,24 @@ query Home {
 
 <script>
 import Hero from "@/components/Hero"
-import JewelryGrid from "@/components/JewelryGrid"
+import JewelryCard from "@/components/JewelryCard"
 import Testimonials from "@/components/Testimonials"
 
 export default {
   components: {
     Hero,
-    JewelryGrid,
+    JewelryCard,
     Testimonials,
-  }
+  },
+
+  data () {
+    return {
+      jewelry: [],
+    }
+  },
+
+  mounted () {
+    this.jewelry = this.$page.jewelry.edges
+  },
 }
 </script>

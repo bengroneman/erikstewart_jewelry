@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <aside>
     <div class="p-4 md:w-1/2 w-full">
       <g-link :to="jewelry.node.path">
         <g-image
@@ -10,11 +10,11 @@
     </div>
     <div class="bg-gray-200 md:w-1/2 w-full">
       <div class="md:w-2/3 w-full mx-auto md:py-24 p-6">
-        <h3 class="heading-2 test">
+        <h2>
           {{ jewelry.node.name }}
-        </h3>
+        </h2>
         <div
-          class="text-p pb-4"
+          class="text-p pb-4 h-32 overflow-ellipsis overflow-hidden ..."
           v-html="jewelry.node.content"
         />
         <MagicButton :link="`/shop/?${jewelry.node.id}`">
@@ -22,7 +22,7 @@
         </MagicButton>
       </div>
     </div>
-  </div>
+  </aside>
 </template>
 <script>
 export default {
@@ -34,5 +34,3 @@ export default {
   }
 }
 </script>
-<style scoped>
-</style>
