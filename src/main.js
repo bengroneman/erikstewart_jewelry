@@ -28,7 +28,7 @@ export default function(Vue, { head }) {
   };
   head.script.push({
     src: 'http://178.128.190.56:8000/js/plausible.js',
-    data_domain: 'erikstewartjewelry.com'
+    'data-domain': 'erikstewartjewelry.com'
   })
   Vue.use(VueSmoothScroll)
   Vue.use(_)
