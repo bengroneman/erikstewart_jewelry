@@ -30,5 +30,31 @@ fields:
 - type: boolean
   name: dark_mode
   label: Dark mode
+- name: font_display
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Font Display
+  description: The font to be used for headers
+- name: font_body
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Font Body
+  description: The font to be used for body paragraphs
 pages:
 - data/theme.json
