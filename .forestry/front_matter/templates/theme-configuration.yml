@@ -35,7 +35,9 @@ fields:
   default: []
   config:
     required: false
-    options: []
+    options:
+    - CenturyGothic
+    - OpenSans
     source:
       type: simple
       section: 
