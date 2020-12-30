@@ -10,5 +10,10 @@
   "instagram": "https://facebook.com",
   "pinterest": "https://pinterest.com",
   "reddit": "https://reddit.com",
-  "etsy": "https://etsy.com"
+  "etsy": "https://etsy.com",
+  "hero_title": "",
+  "hero_subtitle": "",
+  "footer": "",
+  "font_display": "CenturyGothic",
+  "font_body": ""
 }
