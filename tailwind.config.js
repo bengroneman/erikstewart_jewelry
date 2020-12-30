@@ -1,3 +1,5 @@
+let THEME_DATA = require("./data/theme.json")
+
 module.exports = {
   purge: false,
   theme: {
@@ -10,8 +12,8 @@ module.exports = {
         'light-gray-e': '#F5F7F7'
       },
       fontFamily: {
-        display: ['CenturyGothic', 'serif'],
-        body: ['OpenSans', 'sans-serif']
+        display: [THEME_DATA['font_display'], 'serif'],
+        body: [THEME_DATA['font_body'], 'sans-serif']
       },
       fontSize: {
         h1: '7.5rem',
