@@ -9,6 +9,12 @@ module.exports = {
   siteDescription: "Expertly crafted custom jewelry for the body",
   plugins: [
     {
+      use: '@gridsome/plugin-google-analytics',
+      options: {
+        id: 'G-LQ1VN55TL1'
+      }
+    },
+    {
       use: "@gridsome/source-filesystem",
       options: {
         path: "blog/**/*.md",
